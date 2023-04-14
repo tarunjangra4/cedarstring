@@ -334,7 +334,7 @@ function openApi(name, phone, email, count) {
     requireOtp: true,
   };
   axios
-    .post("https://api-dcrm.fincity.com/open/opportunity", body)
+    .post("http://api-dcrm-dev.fincity.in/open/opportunity", body)
     .then((res) => {
       if (isOtp) {
         let enquiryForm = document.querySelector(
