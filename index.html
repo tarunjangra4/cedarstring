@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.12/build/js/intlTelInput.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+  </head>
+
+  <body>
+    <section>
+      <header>
+        <nav class="nav-container">
+          <div>Cedar String</div>
+          <div class="nav-link-container">
+            <div class="buttonDiv">
+              <div class="callButton">
+                <a href="tel:+9195138-85775"
+                  ><img
+                    src="./images/callIcon.svg"
+                    alt="callIcon"
+                    href="tel:+9195138-85775"
+                    loading="lazy"
+                    height="auto"
+                    width="auto"
+                  />
+                  <span class="phoneNo">95138 85775</span>
+                </a>
+              </div>
+            </div>
+            <ul class="nav-links">
+              <li class="nav-link">ABOUT</li>
+              <li class="nav-link">FLOOR PLANS</li>
+              <li class="nav-link">AMENITIES</li>
+              <li class="nav-link">LOCATION</li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- <div id="lottieAnimation"></div> -->
+      <div class="banner-image">
+        <img id="zoom" src="./images/Banner.png" />
+        <div
+          style="
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+            z-index: -2;
+          "
+        >
+          <div class="project-desc">
+            <img
+              style="width: 120px; height: 120px; margin-bottom: 30px"
+              src="./images/Group46.svg"
+            />
+            <p style="font-size: 60px; font-weight: 800">6,616 Sq. ft.</p>
+            <p style="font-size: 34px">of Pure Bliss</p>
+            <button class="btn1" type="button" onclick="test(event)">
+              Ready to move
+            </button>
+            <p style="font-size: 20px">
+              Ultra Luxury Row Villas at Thanisandra
+            </p>
+            <p style="font-size: 24px">₹7 Crore Onwards</p>
+          </div>
+        </div>
+        <div class="banner-desc-container">
+          <div>
+            <h2 style="position: relative">
+              NO GST<span class="gst-back"></span>
+            </h2>
+            <p style="color: #5c5c5c">
+              Constructed with classic sensibilities <br />
+              mixed with contemporary design
+            </p>
+          </div>
+          <div>
+            <h2 style="position: relative">
+              Vaastu compliant<span class="vaastu-back"></span>
+            </h2>
+            <p style="color: #5c5c5c">
+              Constructed with classic sensibilities <br />
+              mixed with contemporary design
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section2">
+      <div>
+        <h1 style="font-size: 60px; font-weight: 500; position: relative">
+          A Personal Retreat
+          <span style="font-size: 30px; font-weight: 400"
+            >right in the city</span
+          >
+          <span class="retreat-back"></span>
+        </h1>
+        <div class="bed-desc-container">
+          <div class="bed-desc">
+            <div style="display: flex; align-items: center; gap: 20px">
+              <img width="64px" height="64px" src="./images/bedIcon.svg" />
+              <p style="font-size: 28px">
+                Bedroom <br /><span style="font-weight: 600">4</span>
+              </p>
+            </div>
+            <ul class="list1">
+              <li>Master Bedroom</li>
+              <li>Guest Bedroom</li>
+              <li>Bedroom 3</li>
+              <li>Bedroom 4</li>
+            </ul>
+            <img
+              width="80%"
+              style="margin-top: 100px"
+              src="./images/pathright.svg"
+            />
+          </div>
+          <div style="overflow: hidden; width: 65%">
+            <div
+              style="
+                display: flex;
+                gap: 30px;
+                justify-content: end;
+                padding-right: 70px;
+                margin-bottom: 40px;
+              "
+            >
+              <img
+                id="leftScroll1"
+                width="30px"
+                style="cursor: pointer"
+                src="./images/arrow-left.svg"
+              />
+              <img
+                id="rightScroll1"
+                width="30px"
+                style="cursor: pointer"
+                src="./images/arrow-right.svg"
+              />
+            </div>
+            <div class="video-container1">
+              <!-- <div
+                style="width: 20px; height: 100%; border: 1px solid salmon"
+                class="bed-video"
+              ></div> -->
+              <video
+                class="bed-video"
+                id="myVideo"
+                autoplay
+                loop
+                src="./images/Final Bedroom.mp4"
+              ></video>
+              <!-- <div
+                style="width: 20px; height: 100%; border: 1px solid salmon"
+                class="bed-video"
+              ></div> -->
+              <video
+                class="bed-video"
+                id="myVideo"
+                autoplay
+                loop
+                src="./images/Final Bedroom.mp4"
+              ></video>
+              <!-- <div
+                style="width: 20px; height: 100%; border: 1px solid salmon"
+                class="bed-video"
+              ></div> -->
+              <video
+                class="bed-video"
+                id="myVideo"
+                autoplay
+                loop
+                src="./images/Final Bedroom.mp4"
+              ></video>
+              <!-- <div
+                class="bed-video"
+                style="width: 20px; height: 100%; border: 1px solid salmon"
+              ></div> -->
+            </div>
+            <div
+              style="
+                display: flex;
+                gap: 10px;
+                padding: 30px 0;
+                justify-content: center;
+              "
+            >
+              <div class="bottom-dash1"></div>
+              <div class="bottom-dash1"></div>
+              <div class="bottom-dash1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section3">
+      <div class="living-desc-container">
+        <div style="overflow: hidden; width: 65%">
+          <div
+            style="
+              display: flex;
+              gap: 30px;
+              justify-content: start;
+              padding-left: 120px;
+              margin-bottom: 40px;
+            "
+          >
+            <img
+              id="leftScroll2"
+              width="30px"
+              style="cursor: pointer"
+              src="./images/arrow-left.svg"
+            />
+            <img
+              id="rightScroll2"
+              width="30px"
+              style="cursor: pointer"
+              src="./images/arrow-right.svg"
+            />
+          </div>
+          <div class="video-container2">
+            <video
+              class="living-video"
+              id="myVideo"
+              autoplay
+              loop
+              src="./images/Final Living.mp4"
+            ></video>
+            <video
+              class="living-video"
+              id="myVideo"
+              autoplay
+              loop
+              src="./images/Final Living.mp4"
+            ></video>
+            <video
+              class="living-video"
+              id="myVideo"
+              autoplay
+              loop
+              src="./images/Final Living.mp4"
+            ></video>
+          </div>
+          <div
+            style="
+              display: flex;
+              gap: 10px;
+              padding: 30px 0;
+              justify-content: center;
+            "
+          >
+            <div class="bottom-dash2"></div>
+            <div class="bottom-dash2"></div>
+            <div class="bottom-dash2"></div>
+          </div>
+        </div>
+        <div class="living-desc">
+          <div style="display: flex; align-items: center; gap: 20px">
+            <img width="64px" height="64px" src="./images/livingIcon.svg" />
+            <p style="font-size: 28px">
+              Living Rooms <br /><span style="font-weight: 600">2</span>
+            </p>
+          </div>
+          <ul class="list2">
+            <li>Ample Natural Light</li>
+            <li>Central Air Conditioning</li>
+            <li>High Ceiling Height</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section4">
+      <div class="bath-desc-container">
+        <div class="bath-desc">
+          <div style="display: flex; align-items: center; gap: 20px">
+            <img width="64px" height="64px" src="./images/bathIcon.svg" />
+            <p style="font-size: 28px">
+              Bath Rooms <br /><span style="font-weight: 600">2</span>
+            </p>
+          </div>
+          <ul class="list3">
+            <li>Premium TOTO fittings</li>
+            <li>Marble tiles till the ceiling</li>
+            <li>Glazed Ceramic Tiles for <br />Maid’s bathroom</li>
+          </ul>
+          <img
+            width="80%"
+            style="margin-top: 100px"
+            src="./images/pathright.svg"
+          />
+        </div>
+        <div style="overflow: hidden; width: 65%">
+          <div
+            style="
+              display: flex;
+              gap: 30px;
+              justify-content: end;
+              padding-right: 120px;
+              margin-bottom: 40px;
+            "
+          >
+            <img
+              id="leftScroll3"
+              width="30px"
+              style="cursor: pointer"
+              src="./images/arrow-left.svg"
+            />
+            <img
+              id="rightScroll3"
+              width="30px"
+              style="cursor: pointer"
+              src="./images/arrow-right.svg"
+            />
+          </div>
+          <div class="video-container3">
+            <video
+              class="bath-video"
+              id="myVideo"
+              autoplay
+              loop
+              src="./images/Final Bath.mp4"
+            ></video>
+            <video
+              class="bath-video"
+              id="myVideo"
+              autoplay
+              loop
+              src="./images/Final Bath.mp4"
+            ></video>
+            <video
+              class="bath-video"
+              id="myVideo"
+              autoplay
+              loop
+              src="./images/Final Bath.mp4"
+            ></video>
+          </div>
+          <div
+            style="
+              display: flex;
+              gap: 10px;
+              padding: 30px 0;
+              justify-content: center;
+            "
+          >
+            <div class="bottom-dash3"></div>
+            <div class="bottom-dash3"></div>
+            <div class="bottom-dash3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section5">
+      <div class="balc-desc-container">
+        <div style="overflow: hidden; width: 65%">
+          <div
+            style="
+              display: flex;
+              gap: 30px;
+              justify-content: start;
+              padding-left: 120px;
+              margin-bottom: 40px;
+            "
+          >
+            <img
+              id="leftScroll4"
+              width="30px"
+              style="cursor: pointer"
+              src="./images/arrow-left.svg"
+            />
+            <img
+              id="rightScroll4"
+              width="30px"
+              style="cursor: pointer"
+              src="./images/arrow-right.svg"
+            />
+          </div>
+          <div class="video-container4">
+            <video
+              class="balc-video"
+              id="myVideo"
+              autoplay
+              loop
+              src="./images/Final Balcony.mp4"
+            ></video>
+            <video
+              class="balc-video"
+              id="myVideo"
+              autoplay
+              loop
+              src="./images/Final Balcony.mp4"
+            ></video>
+            <video
+              class="balc-video"
+              id="myVideo"
+              autoplay
+              loop
+              src="./images/Final Balcony.mp4"
+            ></video>
+          </div>
+          <div
+            style="
+              display: flex;
+              gap: 10px;
+              padding: 30px 0;
+              justify-content: center;
+            "
+          >
+            <div class="bottom-dash4"></div>
+            <div class="bottom-dash4"></div>
+            <div class="bottom-dash4"></div>
+          </div>
+        </div>
+        <div class="balc-desc">
+          <div style="display: flex; align-items: center; gap: 20px">
+            <img width="64px" height="64px" src="./images/balconyIcon.svg" />
+            <p style="font-size: 28px">
+              Balconies <br /><span style="font-weight: 600">3</span>
+            </p>
+          </div>
+          <ul class="list4">
+            <li>Lawn View</li>
+            <li>Pool View</li>
+            <li>Sunrise View</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section6">
+      <img height="550px" src="./images/Courtyard.png" />
+      <div style="padding: 50px 140px">
+        <h1
+          style="
+            font-size: 60px;
+            font-weight: 400;
+            position: relative;
+            display: inline;
+            z-index: 1;
+          "
+        >
+          Central Courtyard<span class="court-back"></span>
+        </h1>
+        <div class="right6">
+          <div class="court-desc">
+            <div>
+              <span class="disc"></span>
+              <h2>
+                Well lit and well<br />
+                ventilated
+              </h2>
+            </div>
+            <div>
+              <span
+                style="display: inline-block; height: 15px; width: 15px"
+              ></span>
+              <p>
+                No Artificial light needed<br />
+                during the day
+              </p>
+            </div>
+          </div>
+          <div class="court-desc">
+            <div>
+              <span class="disc"></span>
+              <h2>Traditional layout</h2>
+            </div>
+            <div>
+              <span
+                style="display: inline-block; height: 15px; width: 15px"
+              ></span>
+              <p>
+                with high floor height of 3<br />
+                levels.
+              </p>
+            </div>
+          </div>
+          <div class="court-desc">
+            <div>
+              <span class="disc"></span>
+              <h2>
+                Omani Marble<br />
+                Flooring
+              </h2>
+            </div>
+            <div>
+              <span
+                style="display: inline-block; height: 15px; width: 15px"
+              ></span>
+              <p>GCC imported marble from Oman</p>
+            </div>
+          </div>
+          <div class="court-desc">
+            <div>
+              <span class="disc"></span>
+              <h2>Marble stair case</h2>
+            </div>
+            <div>
+              <span
+                style="display: inline-block; height: 15px; width: 15px"
+              ></span>
+              <p>
+                1000 sq ft. of marble used in<br />
+                stair case
+              </p>
+            </div>
+          </div>
+          <div style="display: flex; justify-content: end; padding-right: 50px">
+            <img width="70%" src="./images/pathLeft.svg" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section7">
+      <h1
+        style="
+          font-size: 60px;
+          font-weight: 400;
+          position: relative;
+          display: inline;
+          z-index: 1;
+        "
+      >
+        Bring the Outside in.
+        <span class="bring-back"></span>
+      </h1>
+      <img style="margin-top: 50px" width="100%" src="./images/outside.png" />
+      <p
+        style="
+          text-align: center;
+          width: 100%;
+          font-size: 18px;
+          font-weight: lighter;
+          color: #494949;
+          margin-top: 30px;
+        "
+      >
+        Constructed with classic sensibilities mixed with contemporary design,
+        we strive to bring you closer to nature. Each unit<br />
+        comes equipped with a garden kitchen. Relish your dining experience in
+        the comfort of your cosy kitchen or enjoy an outdoor meal amidst<br />
+        lush greenery without leaving your home.
+      </p>
+    </section>
+    <section class="section8">
+      <div class="left8">
+        <h1
+          style="
+            font-size: 60px;
+            font-weight: 400;
+            position: relative;
+            display: inline;
+            z-index: 1;
+          "
+        >
+          Push Gardens<span class="garden-back"></span>
+        </h1>
+        <div class="plush-desc">
+          <div>
+            <span class="disc"></span>
+            <h2>Terrace Garden</h2>
+          </div>
+          <div>
+            <span
+              style="display: inline-block; height: 15px; width: 15px"
+            ></span>
+            <p>
+              Drip Irrigated with pre-set<br />
+              engineering systems
+            </p>
+          </div>
+        </div>
+        <div class="plush-desc">
+          <div>
+            <span class="disc"></span>
+            <h2>Front Lawn</h2>
+          </div>
+          <div>
+            <span
+              style="display: inline-block; height: 15px; width: 15px"
+            ></span>
+            <p>
+              Private front lawn for parties<br />
+              and barbeques.
+            </p>
+          </div>
+        </div>
+        <img
+          style="margin-top: 130px"
+          width="80%"
+          src="./images/pathLeft.svg"
+        />
+      </div>
+      <div class="right8">
+        <img
+          style="position: absolute; left: 0; bottom: 0"
+          height="340px"
+          src="./images/garden1.png"
+        />
+        <img height="450px" src="./images/garden2.png" />
+      </div>
+    </section>
+    <section class="section9">
+      <div class="top9">
+        <h1
+          style="
+            font-size: 60px;
+            font-weight: 400;
+            position: relative;
+            display: inline;
+            z-index: 1;
+          "
+        >
+          Homes that keep on giving
+          <span class="homes-back"></span>
+        </h1>
+        <img width="40%" src="./images/pathright.svg" />
+      </div>
+      <div class="bottom9">
+        <div class="left9">
+          <img width="100%" src="./images/home.png" />
+          <div>
+            <p style="font-size: 28px; font-weight: lighter">Home Theater</p>
+            <h2 style="font-size: 50px">01</h2>
+            <p style="font-size: 28px; font-weight: lighter">Home Office</p>
+          </div>
+        </div>
+        <div class="right9">
+          <div>
+            <h2>02</h2>
+            <p>Covered Car Park</p>
+            <div style="border-bottom: 1px solid black; width: 100px"></div>
+            <img width="34x" height="34px" src="./images/parking.svg" />
+          </div>
+          <div>
+            <h2>01</h2>
+            <p>Servant Room</p>
+            <div style="border-bottom: 1px solid black; width: 100px"></div>
+            <img width="34x" height="34px" src="./images/bedIcon.svg" />
+          </div>
+          <div>
+            <h2>01</h2>
+            <p>Private Elevator</p>
+            <div style="border-bottom: 1px solid black; width: 100px"></div>
+            <img width="34x" height="34px" src="./images/llift.svg" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section10">
+      <h1
+        style="
+          font-size: 60px;
+          font-weight: 400;
+          position: relative;
+          display: inline;
+          z-index: 1;
+        "
+      >
+        Floor Plan
+        <span class="fp-back"></span>
+      </h1>
+      <div>
+        <!-- <a data-fancybox="gallery" href="./images/Banner.png">
+          <img src="./images/Banner.png" alt="Image" />
+        </a> -->
+      </div>
+    </section>
+    <section class="section11">
+      <h1
+        style="
+          font-size: 60px;
+          font-weight: 400;
+          position: relative;
+          display: inline;
+          z-index: 1;
+        "
+      >
+        Amenities
+        <span class="amenities-back"></span>
+      </h1>
+      <div style="display: flex; padding: 50px; justify-content: space-between">
+        <div class="left11">
+          <img width="500px" src="./images/yoga.png" />
+          <div class="row11">
+            <img width="100px" height="20px" src="./images/path.png" />
+            <h2>Outdoor</h2>
+          </div>
+          <div class="row11">
+            <img width="30px" src="./images/pool.png" />
+            <p>Swimming Pool</p>
+          </div>
+          <div class="row11">
+            <img width="30px" src="./images/zumba.png" />
+            <p>Yoga/Zumba Deck</p>
+          </div>
+          <div class="row11">
+            <img width="30px" src="./images/lawn.png" />
+            <p>Lawn Areas</p>
+          </div>
+          <div class="row11">
+            <img width="30px" src="./images/deck.png" />
+            <p>Sunrise Deck</p>
+          </div>
+        </div>
+        <div class="right11">
+          <img width="500px" src="./images/indoor.png" />
+          <div class="row11">
+            <img width="100px" height="20px" src="./images/path.png" />
+            <h2>Indoor</h2>
+          </div>
+          <div class="row11">
+            <img width="30px" src="./images/jacuzzi.png" />
+            <p>Jacuzzi/Steam Room</p>
+          </div>
+          <div class="row11">
+            <img width="30px" src="./images/gym.png" />
+            <p>Gym</p>
+          </div>
+          <div class="row11">
+            <img width="30px" src="./images/kidsZone.png" />
+            <p>Children’s Play Area</p>
+          </div>
+          <div class="row11">
+            <img width="30px" src="./images/games.png" />
+            <p>Indoor Games</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section12">
+      <div style="display: flex; justify-content: space-between">
+        <h1
+          style="
+            font-size: 60px;
+            font-weight: 400;
+            position: relative;
+            display: inline;
+            z-index: 1;
+          "
+        >
+          Location
+          <span class="location-back"></span>
+        </h1>
+        <img width="50%" src="./images/pathLeft.svg" />
+      </div>
+      <div style="display: flex; margin-top: 60px; gap: 70px">
+        <iframe
+          style="border: 7px solid #cbcbcb; border-radius: 40px"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2988.5859675228053!2d77.6330822!3d13.0807891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae10c145922ed7%3A0xf55312ad53bc229f!2sCedar%20String!5e0!3m2!1sen!2sus!4v1555555555555!5m2!1sen!2sus"
+          width="60%"
+          height="380"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen
+        ></iframe>
+        <div>
+          <div style="display: flex; gap: 20px">
+            <img width="58px" height="58px" src="./images/school.png" />
+            <p style="font-size: 22px">
+              Near by<br /><span style="font-size: 32px">Schools/Colleges</span>
+            </p>
+          </div>
+          <ul class="list12">
+            <li>Vidya shilpa - 9km</li>
+            <li>Vidya Niketan - 6km</li>
+            <li>Reva college of Engineering - 3km</li>
+            <li>Bangalore International School - 4km</li>
+            <li>KNS Institute of Technology - 2km</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="enquiry" id="FooterForm">
+        <form
+          class="enquiryMain3"
+          id="enquiryMain"
+          onsubmit="return false"
+          action="javascript:void(0);"
+          method="POST"
+        >
+          <h1
+            style="font-weight: 400; color: #000; text-align: center"
+            class="headerText"
+          >
+            ENQUIRE NOW
+          </h1>
+          <div
+            style="display: flex; gap: 25px; align-items: center"
+            class="enquirySubMain"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              id="name3"
+              required=""
+              style="padding: 0 15px"
+              onchange="checkNew(event,3)"
+              onkeyup="inputChange(event,3)"
+            />
+            <div>
+              <input
+                id="phone3"
+                placeholder="Phone"
+                type="tel"
+                maxlength="10"
+                required
+                onchange="checkNew(event,3)"
+                onkeyup="inputChange(event,3)"
+                oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10);"
+              />
+            </div>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              id="email3"
+              required=""
+              onchange="checkNew(event,3)"
+              onkeyup="inputChange(event,3)"
+            />
+          </div>
+          <div class="checkboxWrapper">
+            <input
+              class="checkbox3"
+              type="checkbox"
+              onclick="inputChange(event,3)"
+            />
+            <div class="lessText3">
+              <span>I hereby declare that I have read the consent...</span
+              ><span
+                style="cursor: pointer; font-weight: 800"
+                onclick="readMore(event,3)"
+                >Read More</span
+              >
+            </div>
+            <div class="moreText3">
+              I hereby declare that I have read the consent and I appoint and
+              allow FINCITY and its Developer partners to call or SMS and/or
+              WhatsApp with details regarding this project or any other projects
+              including new launches from time to time in future,
+              notwithstanding anything to the contrary that may be contained
+              anywhere, including any registration for DNC/ NDNC.
+              <span
+                style="cursor: pointer; font-weight: 800"
+                id="readLess"
+                onclick="readLess(event,3)"
+                >Read Less</span
+              >
+            </div>
+          </div>
+          <button
+            class="enquirBbutton getInfoBtn3"
+            type="submit"
+            disabled=""
+            onclick="getInfo1(event,3)"
+          >
+            Get More Information
+          </button>
+        </form>
+        <!-- <form class="otpVerification" onsubmit="return false">
+          <p
+            style="color: #fff; font-size: 20px; font-weight: 600"
+            class="headerText"
+          >
+            <span>Verification Code</span>
+          </p>
+          <div class="resendText">
+            <span id="numberText1"
+              >Please Enter the Verification Code <br />
+              sent to +91</span
+            >
+            <span class="verfication-no"></span>
+            <span
+              style="cursor: pointer; color: dodgerblue"
+              class="changeLink"
+              onclick="changePhoneNo1(event,3)"
+              >Change</span
+            >
+          </div>
+          <div class="verify-otp-container">
+            <input
+              class="otpInput"
+              maxlength="1"
+              id="__1st"
+              onkeyup="clickEvent(this, '__2nd')"
+              type="text"
+              onkeydown="moveFocusBack(event)"
+            />
+            <input
+              class="otpInput"
+              maxlength="1"
+              id="__2nd"
+              onkeyup="clickEvent(this, '__3rd')"
+              type="text"
+              onkeydown="moveFocusBack(event)"
+            />
+            <input
+              class="otpInput"
+              maxlength="1"
+              id="__3rd"
+              type="text"
+              onkeyup="clickEvent(this, '__4th')"
+              onkeydown="moveFocusBack(event)"
+            />
+            <input
+              class="otpInput"
+              maxlength="1"
+              id="__4th"
+              type="text"
+              onkeydown="moveFocusBack(event)"
+            />
+          </div>
+          <div
+            style="
+              width: 100%;
+              text-align: center;
+              font-weight: 300;
+              margin-top: 25px;
+              cursor: pointer;
+            "
+          >
+            Didn't receive OTP?
+          </div>
+          <div
+            style="
+              width: 100%;
+              text-align: center;
+              font-weight: 600;
+              margin-top: 10px;
+              cursor: pointer;
+            "
+            onclick="sendOtp()"
+          >
+            Resend OTP
+          </div>
+          <button
+            class="verify-btn"
+            style="
+              border: none;
+              width: 100%;
+              border-radius: 40px;
+              height: 40px;
+              width: 280px;
+              margin-top: 15px;
+              background-color: #d4a160;
+            "
+            onclick="verifyOtp(event,3)"
+          >
+            Verify
+          </button>
+        </form> -->
+        <!-- <div class="location" onsubmit="return false">
+          <div class="locationText">
+            <p style="text-align: center" class="ThankYou">Thank You!</p>
+            <p style="text-align: center" id="serveBetter">
+              To Serve you better
+            </p>
+            <p style="text-align: center" class="shareLocation">
+              Please Share your Location
+            </p>
+          </div>
+          <button
+            class="locationButton"
+            type="submit"
+            onclick="detectLocation(event, 3)"
+          >
+            <p style="font-size: 16px; color: #fff" class="detectText">
+              Detect My Location
+            </p>
+            <img
+              width="24px"
+              height="24px"
+              loading="lazy"
+              src="./images/focus.svg"
+              alt="located"
+              class="detect"
+              id="detect1"
+            />
+          </button>
+          <div
+            style="font-size: 14px; margin-top: 10px; color: #fff"
+            class="detected"
+          ></div>
+        </div> -->
+      </div>
+    </footer>
+
+    <section>
+      <div class="owl-carousel owl-theme">
+        <!-- <div class="bed-video">
+          <video
+            id="myVideo"
+            autoplay
+            loop
+            src="./images/Final Bedroom.mp4"
+          ></video>
+        </div>
+        <div class="bed-video">
+          <video
+            id="myVideo"
+            autoplay
+            loop
+            src="./images/Final Bedroom.mp4"
+          ></video>
+        </div>
+        <div class="bed-video">
+          <video
+            id="myVideo"
+            autoplay
+            loop
+            src="./images/Final Bedroom.mp4"
+          ></video>
+        </div> -->
+        <!-- <div class="item"><h4>1</h4></div>
+        <div class="item"><h4>2</h4></div>
+        <div class="item"><h4>3</h4></div>
+        <div class="item"><h4>4</h4></div>
+        <div class="item"><h4>5</h4></div>
+        <div class="item"><h4>6</h4></div>
+        <div class="item"><h4>7</h4></div>
+        <div class="item"><h4>8</h4></div>
+        <div class="item"><h4>9</h4></div>
+        <div class="item"><h4>10</h4></div>
+        <div class="item"><h4>11</h4></div>
+        <div class="item"><h4>12</h4></div> -->
+      </div>
+    </section>
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: { 0: { items: 1 }, 800: { items: 2 }, 1600: { items: 3 } },
+      });
+    </script> -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Initialize Fancybox
+        $("[data-fancybox]").fancybox({
+          // Options and customization here
+        });
+      });
+    </script>
+    <script defer src="./index.js"></script>
+  </body>
+</html>

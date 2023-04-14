@@ -1,0 +1,19 @@
+<svg id="Group_39260" data-name="Group 39260" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39.927" height="52.476" viewBox="0 0 39.927 52.476">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_7059" data-name="Rectangle 7059" width="39.927" height="52.476" fill="#505050"/>
+    </clipPath>
+  </defs>
+  <g id="Group_39259" data-name="Group 39259" transform="translate(0 0)">
+    <path id="Path_232" data-name="Path 232" d="M0,215.841v42.934H1.728V217.569H34.345v41.206h1.728V215.841Z" transform="translate(0 -206.299)" fill="#505050"/>
+    <path id="Path_233" data-name="Path 233" d="M90.137,305.7h11.536v35.582H90.137Zm13.264,0h11.536v35.582H103.4Zm-14.992,37.31h28.256V303.977H88.409Z" transform="translate(-84.501 -290.539)" fill="#505050"/>
+    <path id="Path_234" data-name="Path 234" d="M854.82,657.589h2.138l-1.069-2.138Z" transform="translate(-817.031 -626.476)" fill="#505050"/>
+    <path id="Path_235" data-name="Path 235" d="M854.82,725.355l1.069,2.138,1.069-2.138Z" transform="translate(-817.031 -693.289)" fill="#505050"/>
+    <g id="Group_39258" data-name="Group 39258" transform="translate(0 0)">
+      <g id="Group_39257" data-name="Group 39257" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <path id="Path_236" data-name="Path 236" d="M260.863,2.583l-2.451-2.4L258.4.165A.629.629,0,0,0,258.318.1h0l-.024-.014-.028-.016h0L258.242.06,258.21.046h0l-.02-.007-.037-.013h0l-.018,0-.045-.01-.026,0h0l-.042,0h-.093l-.041,0h0l-.028,0-.043.01-.018,0h0l-.037.013-.02.007h0l-.032.014-.022.011h0l-.028.016L257.63.1h0a.628.628,0,0,0-.078.062l-.016.014-2.451,2.4a.626.626,0,1,0,.877.893l1.387-1.361v4.43a.626.626,0,1,0,1.251,0V2.115l1.387,1.361a.626.626,0,0,0,.877-.893" transform="translate(-243.629 0.001)" fill="#505050"/>
+        <path id="Path_237" data-name="Path 237" d="M427.868,4.586l-2.451,2.4L425.4,7a.632.632,0,0,1-.078.062h0l-.024.014-.028.016h0l-.022.011-.032.015h0l-.02.007-.037.013h0l-.018,0-.045.01-.026,0h0l-.042,0h-.093l-.041,0h0l-.028,0-.043-.01-.018,0h0l-.037-.013-.02-.007h0l-.032-.014-.022-.011h0l-.028-.016-.024-.014h0A.622.622,0,0,1,424.556,7l-.015-.014-2.451-2.4a.626.626,0,1,1,.877-.893l1.387,1.361V.625a.626.626,0,0,1,1.251,0v4.43l1.387-1.361a.626.626,0,1,1,.877.893" transform="translate(-403.251 0.001)" fill="#505050"/>
+      </g>
+    </g>
+  </g>
+</svg>

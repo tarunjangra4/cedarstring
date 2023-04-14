@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="87.872" height="75.302" viewBox="0 0 87.872 75.302">
+  <g id="Group_39242" data-name="Group 39242" transform="translate(1.5 1.5)">
+    <path id="Path_95" data-name="Path 95" d="M797.921,246.046h18.451v3.691s-5.536,1.537-5.536,5.534v7.38a14.761,14.761,0,0,1-14.76,14.762H751.8a14.761,14.761,0,0,1-14.76-14.762v-7.38c0-4-5.536-5.534-5.536-5.534v-3.691h47.972" transform="translate(-731.5 -210.99)" fill="none" stroke="#505050" stroke-width="3"/>
+    <path id="Path_96" data-name="Path 96" d="M766.717,262.677l1.845,5.535v1.845" transform="translate(-700.295 -196.254)" fill="none" stroke="#505050" stroke-width="3"/>
+    <path id="Path_97" data-name="Path 97" d="M742.149,262.677l-1.845,5.535v1.845" transform="translate(-723.699 -196.254)" fill="none" stroke="#505050" stroke-width="3"/>
+    <path id="Path_98" data-name="Path 98" d="M744.217,233.329h7.38" transform="translate(-720.232 -222.258)" fill="none" stroke="#505050" stroke-width="3"/>
+    <path id="Path_99" data-name="Path 99" d="M753.975,238.53v-3.691a7.38,7.38,0,0,0-7.38-7.38H744.75a7.38,7.38,0,0,0-7.38,7.38v27.676" transform="translate(-726.299 -227.459)" fill="none" stroke="#505050" stroke-width="3"/>
+    <path id="Rectangle_6956" data-name="Rectangle 6956" d="M1,0H17.45a1,1,0,0,1,1,1V18.45a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V1A1,1,0,0,1,1,0Z" transform="translate(47.971 31.366)" fill="none" stroke="#505050" stroke-width="3"/>
+    <line id="Line_34" data-name="Line 34" y2="3.69" transform="translate(23.986 16.606)" fill="none" stroke="#505050" stroke-width="3"/>
+    <line id="Line_35" data-name="Line 35" y2="3.69" transform="translate(31.366 16.606)" fill="none" stroke="#505050" stroke-width="3"/>
+    <line id="Line_36" data-name="Line 36" y2="3.69" transform="translate(27.676 23.986)" fill="none" stroke="#505050" stroke-width="3"/>
+    <line id="Line_37" data-name="Line 37" y2="3.69" transform="translate(20.296 23.986)" fill="none" stroke="#505050" stroke-width="3"/>
+    <line id="Line_38" data-name="Line 38" y2="3.69" transform="translate(35.056 23.986)" fill="none" stroke="#505050" stroke-width="3"/>
+  </g>
+</svg>
