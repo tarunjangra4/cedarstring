@@ -126,7 +126,7 @@ var sections = document.querySelectorAll(".bed-video");
 var currentIndex = 0;
 
 document.addEventListener("click", function () {
-  sections[0].play();
+  //   sections[0].play();
 });
 
 document.getElementById("rightScroll1").addEventListener("click", function () {
