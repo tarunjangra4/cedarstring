@@ -831,6 +831,33 @@ button:disabled{
 .mobile-banner-container{
     display: none;
 }
+.section1-mobile{
+    display: none;
+}
+.menu-link{
+    display: none;
+}
+.section2-mobile{
+    display: none;
+}
+.section6-mobile{
+    display: none;
+}
+.section7-mobile{
+    display: none;
+}
+.section8-mobile{
+    display: none;
+}
+.section9-mobile{
+    display: none;
+}
+.section10-mobile{
+    display: none;
+}
+.section11-mobile{
+    display: none;
+}
 
 @media screen and (max-width: 767px) {
     /* header{
@@ -927,7 +954,17 @@ button:disabled{
         font-size: 22px;
     }
     .mobile-banner-container{
+        position: absolute;
+        top: -150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .section1-mobile{
         display: block;
+        margin-top: 570px;
     }
     .modal-content{
         width: 330px;
@@ -942,6 +979,31 @@ button:disabled{
         margin-top: 0;
         display: none;
     }
+    .section2-mobile{
+        position: relative;
+        display: block;
+        margin-top: 50px;
+        z-index: 2;
+        background-color: #fff;
+        padding-left: 20px;
+    }
+    .retreat-path{
+        position: relative;
+    }
+    .retreat-path::after{
+        content: " ";
+        background-image: url('./images/pathright.svg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+        position: absolute;
+        bottom: -10px;
+        right: 30px;
+        width: 45%;
+        height: 18px;
+        z-index: 2;
+    }
     .section3{
         display: none;
     }
@@ -953,6 +1015,21 @@ button:disabled{
     }
     .section6{
         display: none;
+    }
+    .section6-mobile{
+        display: block;
+        padding: 50px 20px;
+    }
+    .section7-mobile{
+        display: block;
+        padding: 50px 20px;
+    }
+    .disc{
+        width: 12px;
+        height: 12px;
+    }
+    .court-desc{
+        gap: 5px;
     }
     .section7{
         display: none;

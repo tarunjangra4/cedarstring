@@ -60,10 +60,9 @@ window.intlTelInput(input1, {
 // }
 
 // Programmatically click the button
-setTimeout(() => {
-  //   document.querySelector(".btn-primary").click();
-  $(".modal").modal("show");
-}, 1000);
+// setTimeout(() => {
+//   $(".modal").modal("show");
+// }, 1000);
 
 var lottieElement = document.getElementById("lottieAnimation");
 
@@ -125,9 +124,9 @@ var container = document.querySelector(".video-container1");
 var sections = document.querySelectorAll(".bed-video");
 var currentIndex = 0;
 
-document.addEventListener("click", function () {
-  //   sections[0].play();
-});
+// document.addEventListener("click", function () {
+//     sections[0].play();
+// });
 
 document.getElementById("rightScroll1").addEventListener("click", function () {
   currentIndex++;
