@@ -1,5 +1,5 @@
 var input3 = document.querySelector("#phone3");
-var iti3 = window.intlTelInput(input3, {
+window.intlTelInput(input3, {
   onlyCountries: [
     "in",
     "au",
@@ -26,7 +26,44 @@ var iti3 = window.intlTelInput(input3, {
   separateDialCode: true,
 });
 
-console.log(iti3, "yay");
+var input1 = document.querySelector("#phone1");
+window.intlTelInput(input1, {
+  onlyCountries: [
+    "in",
+    "au",
+    "bt",
+    "br",
+    "ca",
+    "cn",
+    "de",
+    "hk",
+    "it",
+    "jp",
+    "kw",
+    "my",
+    "mv",
+    "np",
+    "QA",
+    "sa",
+    "sg",
+    "lk",
+    "th",
+    "ae",
+  ],
+  preferredCountries: ["in"],
+  separateDialCode: true,
+});
+
+// function myButtonClick() {
+//     console.log("Button clicked!");
+//     // Perform desired action here
+// }
+
+// Programmatically click the button
+setTimeout(() => {
+  //   document.querySelector(".btn-primary").click();
+  $(".modal").modal("show");
+}, 1000);
 
 var lottieElement = document.getElementById("lottieAnimation");
 
@@ -60,8 +97,6 @@ var observer = new IntersectionObserver(function (entries) {
 });
 
 observer.observe(section);
-
-function test(e) {}
 
 window.addEventListener("load", () => {
   console.log("kadkjfakjjl");
@@ -292,19 +327,23 @@ document.getElementById("leftScroll4").addEventListener("click", function () {
 function getInfo1(e, count) {
   e.stopPropagation();
   let name = document.querySelector(
-    count == 1 ? "#name1" : count == 2 ? "#name2" : "#name"
+    count == 1 ? "#name1" : count == 2 ? "#name2" : "#name3"
   )?.value;
   let phone = document.querySelector(
-    count == 1 ? "#phone1" : count == 2 ? "#phone2" : "#phone"
+    count == 1 ? "#phone1" : count == 2 ? "#phone2" : "#phone3"
   )?.value;
   let email = document.querySelector(
-    count == 1 ? "#email1" : count == 2 ? "#email2" : "#email"
+    count == 1 ? "#email1" : count == 2 ? "#email2" : "#email3"
   )?.value;
+  console.log("get info", name, phone, email);
   openApi(name, phone, email, count);
 }
 
+let phoneNo;
+let token;
+
 function openApi(name, phone, email, count) {
-  //   phoneNo = phone;
+  phoneNo = phone;
   let url = window.location.href;
   let searchParams = new URLSearchParams(new URL(url).search);
   utm_source = searchParams.get("utm_source");
@@ -336,36 +375,177 @@ function openApi(name, phone, email, count) {
   axios
     .post("http://api-dcrm-dev.fincity.in/open/opportunity", body)
     .then((res) => {
-      if (isOtp) {
-        let enquiryForm = document.querySelector(
-          count == 1
-            ? ".enquiryMain1"
-            : count == 2
-            ? ".enquiryMain2"
-            : ".enquiryMain3"
-        );
-        let verifyOtp = document.querySelector(
-          count == 1
-            ? ".otpVerification1"
-            : count == 2
-            ? ".otpVerification2"
-            : ".otpVerification3"
-        );
-        enquiryForm.style.display = "none";
-        verifyOtp.style.display = "flex";
-        // token = res?.data?.token;
-        sendOtp();
-      } else {
-        setTimeout(() => {
-          window.location.href = "thankyou.html";
-        }, 1000);
-      }
+      //   if (isOtp) {
+      let enquiryForm = document.querySelector(
+        count == 1
+          ? ".enquiryMain1"
+          : count == 2
+          ? ".enquiryMain2"
+          : ".enquiryMain3"
+      );
+      let verifyOtp = document.querySelector(
+        count == 1
+          ? ".otpVerification1"
+          : count == 2
+          ? ".otpVerification2"
+          : ".otpVerification3"
+      );
+      enquiryForm.style.display = "none";
+      verifyOtp.style.display = "flex";
+      token = res?.data?.token;
+      sendOtp();
+      //   } else {
+      //     setTimeout(() => {
+      //         window.location.href = "thankyou.html";
+      //     }, 1000);
+      //   }
     })
     .catch((error) => {});
 }
 
+function sendOtp() {
+  document.querySelector(".verfication-no1").innerHTML = phoneNo;
+  // document.querySelector(".verfication-no2").innerHTML = phoneNo;
+  document.querySelector(".verfication-no3").innerHTML = phoneNo;
+  console.log(document.querySelector(".verfication-no3").innerHTML);
+  axios
+    .post(
+      `http://api-dcrm-dev.fincity.in/open/opportunity/send-otp?token=${token}`
+    )
+    .then((res) => {
+      data = res?.data;
+    })
+    .catch((err) => {});
+}
+
+function resendOtp(count) {
+  //   document.querySelector(".verfication-no1").innerHTML = phoneNo;
+  //   document.querySelector(".verfication-no2").innerHTML = phoneNo;
+  document.querySelector(".verfication-no3").innerHTML = phoneNo;
+  console.log(document.querySelector(".verfication-no3").innerHTML);
+  axios
+    .post(
+      `http://api-dcrm-dev.fincity.in/open/opportunity/send-otp?token=${token}`
+    )
+    .then((res) => {
+      data = res?.data;
+      document.querySelector(
+        count == 1 ? ".resendOtp1" : count == 2 ? ".resendOtp2" : ".resendOtp3"
+      ).innerHTML = "OTP sent!";
+    })
+    .catch((err) => {});
+}
+
+function verifyOtp(e, check) {
+  e.stopPropagation();
+  let otp =
+    document.querySelector(
+      check == 1 ? "#_1st" : check == 2 ? "#_1st_" : "#__1st"
+    )?.value +
+    document.querySelector(
+      check == 1 ? "#_2nd" : check == 2 ? "#_2nd_" : "#__2nd"
+    )?.value +
+    document.querySelector(
+      check == 1 ? "#_3rd" : check == 2 ? "#_3rd_" : "#__3rd"
+    )?.value +
+    document.querySelector(
+      check == 1 ? "#_4th" : check == 2 ? "#_4th_" : "#__4th"
+    )?.value;
+  let body = {
+    token: data?.token,
+    otp: otp,
+  };
+
+  axios
+    .post(`http://api-dcrm-dev.fincity.in/open/opportunity/verify`, body)
+    .then((res) => {
+      document.querySelector(
+        check == 1
+          ? ".otpVerification1"
+          : check == 2
+          ? ".otpVerification2"
+          : ".otpVerification3"
+      ).style.display = "none";
+      document.querySelector(
+        check == 1 ? ".location1" : check == 2 ? ".location2" : ".location3"
+      ).style.display = "flex";
+      setTimeout(() => {
+        // window.location.href = "https://dcrm.fincity.com/?&user=consumer";
+      }, 5000);
+    })
+    .catch((err) => {});
+}
+
+const optionLocation = {
+  enableHighAccuracy: true,
+  timeout: 10000,
+  maximumAge: 0,
+};
+
+let data;
+
+function detectLocation(e, check) {
+  document.querySelector(
+    check == 1 ? ".detected1" : check == 2 ? ".detected2" : ".detected3"
+  ).innerHTML = "";
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        // delete data?.otp;
+        let body = {
+          token: data?.token,
+          locationDto: {
+            lat: position?.coords?.latitude,
+            lng: position?.coords?.longitude,
+          },
+        };
+
+        axios
+          .post(`http://api-dcrm-dev.fincity.in/open/opportunity/verify`, body)
+          .then((res) => {
+            document.querySelector(
+              check == 1
+                ? ".locationButton1"
+                : check == 2
+                ? ".locationButton2"
+                : ".locationButton3"
+            ).disabled = true;
+            console.log(
+              document.querySelector(
+                check == 1
+                  ? ".locationButton1"
+                  : check == 2
+                  ? ".locationButton2"
+                  : ".locationButton3"
+              ).disabled
+            );
+            document.querySelector(
+              check == 1
+                ? ".detected1"
+                : check == 2
+                ? ".detected2"
+                : ".detected3"
+            ).innerHTML = "Location Detected";
+          })
+          .catch((err) => {});
+      },
+      (error) => {
+        // There was an error retrieving the location
+        document.getElementById(
+          check == 1 ? ".detected1" : check == 2 ? ".detected2" : ".detected3"
+        ).innerText = "Failed to fetch Location!";
+      },
+      optionLocation
+    );
+  } else {
+    document.querySelector(
+      check == 1 ? ".detectText1" : check == 2 ? ".detectText2" : ".detectText3"
+    ).innerText = "Failed to fetch Location!";
+  }
+}
+
 function checkNew(e, count) {
-  console.log("on change");
+  console.log("count ", count);
   let name = document.querySelector(
     count == 1 ? "#name1" : count == 2 ? "#name2" : "#name3"
   ).value;
@@ -382,15 +562,16 @@ function checkNew(e, count) {
     count == 1 ? ".getInfoBtn1" : count == 2 ? ".getInfoBtn2" : ".getInfoBtn3"
   );
   if (name !== "" && phone !== "" && email !== "" && checkboxValue) {
+    console.log("if");
     btn.disabled = false;
   } else {
+    console.log("else");
     btn.disabled = true;
   }
 }
 
 function inputChange(e, count) {
-  console.log("input change");
-  checkNew(e, 3);
+  checkNew(e, count);
 }
 
 function readMore(e, count) {
@@ -415,4 +596,54 @@ function readLess(e, count) {
   );
   lessText1.style.display = "block";
   moreText1.style.display = "none";
+}
+
+function changePhoneNo1(e, count) {
+  let enquiryForm = document.querySelector(
+    count == 1
+      ? ".enquiryMain1"
+      : count == 2
+      ? ".enquiryMain2"
+      : ".enquiryMain3"
+  );
+  let verifyOtp = document.querySelector(
+    count == 1
+      ? ".otpVerification1"
+      : count == 2
+      ? ".otpVerification2"
+      : ".otpVerification3"
+  );
+  verifyOtp.style.display = "none";
+  enquiryForm.style.display = "flex";
+}
+
+function clickEvent(first, last) {
+  if (first.value.length) {
+    document.getElementById(last).focus();
+  }
+}
+
+function moveFocusBack(e) {
+  var prevInput = e.target.previousElementSibling;
+
+  if (e.key === "Backspace" && e.target.value === "" && prevInput != null) {
+    prevInput.focus();
+  }
+}
+
+function showMobileMenu() {
+  //   document.querySelector(".mobilemenu").style.display = "block";
+  document.querySelector(".mobileMenuContainer").style.width = "100%";
+}
+
+function hideMobileMenu(event) {
+  console.log(event.target);
+  if (event.target != document.querySelector(".mobilemenu")) {
+    document.querySelector(".mobileMenuContainer").style.display = "none";
+    document.querySelector(".mobileMenuContainer").style.width = "0";
+    setTimeout(() => {
+      document.querySelector(".mobileMenuContainer").style.display = "flex";
+    }, 10);
+  }
+  document.body.style.position = "relative";
 }

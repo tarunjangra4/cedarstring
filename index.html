@@ -4,11 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="description" content="--" />
+    <title>Cedar String </title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.12/build/js/intlTelInput.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
@@ -17,6 +27,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
     <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -33,85 +52,131 @@
     /> -->
   </head>
 
-  <body>
-    <section>
-      <header>
-        <nav class="nav-container">
-          <div>Cedar String</div>
-          <div class="nav-link-container">
-            <div class="buttonDiv">
-              <div class="callButton">
-                <a href="tel:+9195138-85775"
-                  ><img
-                    src="./images/callIcon.svg"
-                    alt="callIcon"
-                    href="tel:+9195138-85775"
-                    loading="lazy"
-                    height="auto"
-                    width="auto"
-                  />
-                  <span class="phoneNo">95138 85775</span>
-                </a>
-              </div>
+  <body style="padding-right: 0px !important">
+    <section class="header">
+      <nav class="nav-container">
+        <div style="display: flex; align-items: center">
+          <img width="200px" src="./images/projectIcon.png" />
+        </div>
+        <div class="nav-link-container">
+          <div class="buttonDiv">
+            <div class="callButton">
+              <a href="tel:+9195138-85775"
+                ><img
+                  src="./images/callIcon.svg"
+                  alt="callIcon"
+                  href="tel:+9195138-85775"
+                  loading="lazy"
+                  height="auto"
+                  width="auto"
+                />
+                <span class="phoneNo">95138 85775</span>
+              </a>
             </div>
-            <ul class="nav-links">
-              <li class="nav-link">ABOUT</li>
-              <li class="nav-link">FLOOR PLANS</li>
-              <li class="nav-link">AMENITIES</li>
-              <li class="nav-link">LOCATION</li>
-            </ul>
           </div>
-        </nav>
-      </header>
-      <!-- <div id="lottieAnimation"></div> -->
-      <div class="banner-image">
-        <img id="zoom" src="./images/Banner.png" />
-        <div
-          style="
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.2);
-            z-index: -2;
-          "
-        >
-          <div class="project-desc">
-            <img
-              style="width: 120px; height: 120px; margin-bottom: 30px"
-              src="./images/Group46.svg"
-            />
-            <p style="font-size: 60px; font-weight: 800">6,616 Sq. ft.</p>
-            <p style="font-size: 34px">of Pure Bliss</p>
-            <button class="btn1" type="button" onclick="test(event)">
-              Ready to move
-            </button>
-            <p style="font-size: 20px">
-              Ultra Luxury Row Villas at Thanisandra
-            </p>
-            <p style="font-size: 24px">₹7 Crore Onwards</p>
+          <ul class="nav-links">
+            <li class="nav-link"><a>ABOUT</a></li>
+            <li class="nav-link"><a>FLOOR PLANS</a></li>
+            <li class="nav-link"><a>AMENITIES</a></li>
+            <li class="nav-link"><a>LOCATION</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="mobile-nav-container">
+        <img width="150px" height="40px" src="./images/projectIcon.png" />
+        <div>
+          <div style="display: flex; gap: 20px">
+            <div class="phoneCall">
+              <img src="./images/callIcon.svg" />
+            </div>
+            <div
+              class="menuIcon"
+              style="color: #17423b"
+              onclick="showMobileMenu()"
+            >
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
           </div>
         </div>
-        <div class="banner-desc-container">
-          <div>
-            <h2 style="position: relative">
-              NO GST<span class="gst-back"></span>
-            </h2>
-            <p style="color: #5c5c5c">
-              Constructed with classic sensibilities <br />
-              mixed with contemporary design
-            </p>
+      </nav>
+      <div class="mobileMenuContainer" onclick="hideMobileMenu(event)">
+        <div class="menu-back"></div>
+        <div class="mobilemenu">
+          <div
+            class="menu-link"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <i style="padding-top: 8px" class="fas fa-home"></i>
+            <button class="closeBtn">x</button>
           </div>
-          <div>
-            <h2 style="position: relative">
-              Vaastu compliant<span class="vaastu-back"></span>
-            </h2>
-            <p style="color: #5c5c5c">
-              Constructed with classic sensibilities <br />
-              mixed with contemporary design
-            </p>
-          </div>
+          <div class="menu-link"><a>About</a></div>
+          <div class="menu-link"><a>Floor Plans</a></div>
+          <div class="menu-link"><a>Amenities</a></div>
+          <div class="menu-link"><a>Location</a></div>
         </div>
       </div>
+    </section>
+
+    <section class="banner-image">
+      <img id="zoom" src="./images/Banner.png" />
+      <div
+        style="
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.2);
+          z-index: -2;
+        "
+      >
+        <div class="project-desc">
+          <img
+            style="width: 120px; height: 120px; margin-bottom: 30px"
+            src="./images/Group46.svg"
+          />
+          <p style="font-size: 60px; font-weight: 800">6,616 Sq. ft.</p>
+          <p style="font-size: 34px">of Pure Bliss</p>
+          <button
+            class="btn1"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            onclick="test(event)"
+          >
+            Ready to move
+          </button>
+          <p style="font-size: 20px">Ultra Luxury Row Villas at Thanisandra</p>
+          <p style="font-size: 24px">₹7 Crore Onwards</p>
+        </div>
+      </div>
+      <div class="banner-desc-container">
+        <div>
+          <h2 style="position: relative">
+            NO GST<span class="gst-back"></span>
+          </h2>
+          <p style="color: #5c5c5c">
+            Constructed with classic sensibilities <br />
+            mixed with contemporary design
+          </p>
+        </div>
+        <div>
+          <h2 style="position: relative">
+            Vaastu compliant<span class="vaastu-back"></span>
+          </h2>
+          <p style="color: #5c5c5c">
+            Constructed with classic sensibilities <br />
+            mixed with contemporary design
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="mobile-banner-container">
+      <img height="700px" width="100px" src="./images/Banner.png" />
     </section>
     <section class="section2">
       <div>
@@ -798,7 +863,7 @@
       </div>
     </section>
     <footer>
-      <div class="enquiry" id="FooterForm">
+      <div class="enquiry3" id="FooterForm">
         <form
           class="enquiryMain3"
           id="enquiryMain"
@@ -886,19 +951,16 @@
             Get More Information
           </button>
         </form>
-        <!-- <form class="otpVerification" onsubmit="return false">
-          <p
-            style="color: #fff; font-size: 20px; font-weight: 600"
-            class="headerText"
-          >
-            <span>Verification Code</span>
-          </p>
+        <form class="otpVerification3" onsubmit="return false">
+          <div style="color: #000; font-weight: 400" class="headerText">
+            <h1>Verification Code</h1>
+          </div>
           <div class="resendText">
-            <span id="numberText1"
+            <span
               >Please Enter the Verification Code <br />
               sent to +91</span
             >
-            <span class="verfication-no"></span>
+            <span class="verfication-no3"></span>
             <span
               style="cursor: pointer; color: dodgerblue"
               class="changeLink"
@@ -951,6 +1013,7 @@
             Didn't receive OTP?
           </div>
           <div
+            class="resendOtp3"
             style="
               width: 100%;
               text-align: center;
@@ -958,7 +1021,7 @@
               margin-top: 10px;
               cursor: pointer;
             "
-            onclick="sendOtp()"
+            onclick="resendOtp(3)"
           >
             Resend OTP
           </div>
@@ -971,14 +1034,16 @@
               height: 40px;
               width: 280px;
               margin-top: 15px;
-              background-color: #d4a160;
+              background-color: #073521;
+              color: #fff;
+              cursor: pointer;
             "
             onclick="verifyOtp(event,3)"
           >
             Verify
           </button>
-        </form> -->
-        <!-- <div class="location" onsubmit="return false">
+        </form>
+        <div class="location3" onsubmit="return false">
           <div class="locationText">
             <p style="text-align: center" class="ThankYou">Thank You!</p>
             <p style="text-align: center" id="serveBetter">
@@ -989,11 +1054,11 @@
             </p>
           </div>
           <button
-            class="locationButton"
+            class="locationButton3"
             type="submit"
             onclick="detectLocation(event, 3)"
           >
-            <p style="font-size: 16px; color: #fff" class="detectText">
+            <p style="font-size: 16px; color: #fff" class="detectText3">
               Detect My Location
             </p>
             <img
@@ -1002,17 +1067,258 @@
               loading="lazy"
               src="./images/focus.svg"
               alt="located"
-              class="detect"
-              id="detect1"
             />
           </button>
           <div
-            style="font-size: 14px; margin-top: 10px; color: #fff"
-            class="detected"
+            style="font-size: 16px; margin-top: 10px; color: #000"
+            class="detected3"
           ></div>
-        </div> -->
+        </div>
       </div>
     </footer>
+
+    <div
+      style="padding: 0"
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img
+              style="margin-top: 20px"
+              width="250px"
+              src="./images/projectIcon.png"
+            />
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="enquiry1">
+              <form
+                class="enquiryMain1"
+                onsubmit="return false"
+                action="javascript:void(0);"
+                method="POST"
+              >
+                <h3
+                  style="font-weight: 400; color: #000; text-align: center"
+                  class="headerText"
+                >
+                  ENQUIRE NOW
+                </h3>
+                <div class="enquirySubMain1">
+                  <input
+                    id="name1"
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    required=""
+                    onchange="checkNew(event,1)"
+                    onkeyup="inputChange(event,1)"
+                  />
+                  <input
+                    id="phone1"
+                    placeholder="Phone"
+                    type="tel"
+                    maxlength="10"
+                    required
+                    onchange="checkNew(event,1)"
+                    onkeyup="inputChange(event,1)"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10);"
+                  />
+                  <input
+                    id="email1"
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required=""
+                    onchange="checkNew(event,1)"
+                    onkeyup="inputChange(event,1)"
+                  />
+                </div>
+                <div
+                  style="width: auto; padding: 0 34px; gap: 10px"
+                  class="checkboxWrapper"
+                >
+                  <input
+                    style="width: 10px"
+                    class="checkbox1"
+                    type="checkbox"
+                    checked
+                    onclick="inputChange(event,1)"
+                  />
+                  <div class="lessText1">
+                    <span>I hereby declare that I have read the consent...</span
+                    ><span
+                      style="cursor: pointer; font-weight: 800"
+                      onclick="readMore(event,1)"
+                      >Read More</span
+                    >
+                  </div>
+                  <p class="moreText1">
+                    I hereby declare that I have read the consent and I appoint
+                    and allow FINCITY and its Developer partners to call or SMS
+                    and/or WhatsApp with details regarding this project or any
+                    other projects including new launches from time to time in
+                    future, notwithstanding anything to the contrary that may be
+                    contained anywhere, including any registration for DNC/
+                    NDNC.
+                    <span
+                      style="cursor: pointer; font-weight: 800"
+                      id="readLess"
+                      onclick="readLess(event,1)"
+                      >Read Less</span
+                    >
+                  </p>
+                </div>
+                <button
+                  class="enquirBbutton getInfoBtn1"
+                  type="submit"
+                  disabled=""
+                  onclick="getInfo1(event,1)"
+                >
+                  Get More Information
+                </button>
+              </form>
+              <form class="otpVerification1" onsubmit="return false">
+                <div style="color: #000; font-weight: 400" class="headerText">
+                  <h3>Verification Code</h3>
+                </div>
+                <div class="resendText">
+                  <span
+                    >Please Enter the Verification Code <br />
+                    sent to +91</span
+                  >
+                  <span class="verfication-no1"></span>
+                  <span
+                    style="cursor: pointer; color: dodgerblue"
+                    class="changeLink"
+                    onclick="changePhoneNo1(event,1)"
+                    >Change</span
+                  >
+                </div>
+                <div class="verify-otp-container">
+                  <input
+                    class="otpInput"
+                    maxlength="1"
+                    id="_1st"
+                    onkeyup="clickEvent(this, '_2nd')"
+                    type="text"
+                    onkeydown="moveFocusBack(event)"
+                  />
+                  <input
+                    class="otpInput"
+                    maxlength="1"
+                    id="_2nd"
+                    onkeyup="clickEvent(this, '_3rd')"
+                    type="text"
+                    onkeydown="moveFocusBack(event)"
+                  />
+                  <input
+                    class="otpInput"
+                    maxlength="1"
+                    id="_3rd"
+                    type="text"
+                    onkeyup="clickEvent(this, '_4th')"
+                    onkeydown="moveFocusBack(event)"
+                  />
+                  <input
+                    class="otpInput"
+                    maxlength="1"
+                    id="_4th"
+                    type="text"
+                    onkeydown="moveFocusBack(event)"
+                  />
+                </div>
+                <div
+                  style="
+                    width: 100%;
+                    text-align: center;
+                    font-weight: 300;
+                    margin-top: 25px;
+                    cursor: pointer;
+                  "
+                >
+                  Didn't receive OTP?
+                </div>
+                <div
+                  class="resendOtp1"
+                  style="
+                    width: 100%;
+                    text-align: center;
+                    font-weight: 600;
+                    margin-top: 10px;
+                    cursor: pointer;
+                  "
+                  onclick="resendOtp(1)"
+                >
+                  Resend OTP
+                </div>
+                <button
+                  class="verify-btn"
+                  style="
+                    border: none;
+                    width: 100%;
+                    border-radius: 40px;
+                    height: 40px;
+                    width: 280px;
+                    margin-top: 15px;
+                    background-color: #073521;
+                    color: #fff;
+                    cursor: pointer;
+                  "
+                  onclick="verifyOtp(event,1)"
+                >
+                  Verify
+                </button>
+              </form>
+              <div class="location1" onsubmit="return false">
+                <div style="font-size: 20px">
+                  <p style="text-align: center" class="ThankYou">Thank You!</p>
+                  <p style="text-align: center" id="serveBetter">
+                    To Serve you better
+                  </p>
+                  <p style="text-align: center" class="shareLocation">
+                    Please Share your Location
+                  </p>
+                </div>
+                <button
+                  class="locationButton1"
+                  type="submit"
+                  onclick="detectLocation(event, 1)"
+                >
+                  <p
+                    style="font-size: 16px; color: #fff; margin: 0"
+                    class="detectText1"
+                  >
+                    Detect My Location
+                  </p>
+                  <img
+                    width="24px"
+                    height="24px"
+                    loading="lazy"
+                    src="./images/focus.svg"
+                    alt="located"
+                  />
+                </button>
+                <div
+                  style="font-size: 16px; margin-top: 10px; color: #000"
+                  class="detected1"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <section>
       <div class="owl-carousel owl-theme">
@@ -1074,6 +1380,12 @@
         responsive: { 0: { items: 1 }, 800: { items: 2 }, 1600: { items: 3 } },
       });
     </script> -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
