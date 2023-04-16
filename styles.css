@@ -646,6 +646,11 @@ button:disabled{
     gap: 40px;
     align-items: center;
 }
+.enquirySubMain{
+    display: flex; 
+    gap: 25px; 
+    align-items: center;
+}
 .enquirySubMain input {
     padding: 20px;
 }
@@ -858,6 +863,9 @@ button:disabled{
     display: none;
 }
 .section11-mobile{
+    display: none;
+}
+.section12-mobile{
     display: none;
 }
 
@@ -1077,10 +1085,31 @@ button:disabled{
     .section12{
         display: none;
     }
+    .section12-mobile{
+        display: block;
+        padding: 50px 20px;
+    }
+    .list12{
+        margin-left: 5px;
+        margin-top: 10px;
+    }
     .section13{
         display: none;
     }
     footer{
-        display: none;
+        /* display: none; */
+    }
+    .enquiry3{
+        padding: 36px;
+    }
+    .enquirySubMain{
+        flex-direction: column;
+    }
+    .checkboxWrapper input[type='checkbox']{
+        width: 10px;
+        height: 10px;
+    }
+    .lessText3{
+        font-size: 10px;
     }
 }
