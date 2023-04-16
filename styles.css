@@ -602,7 +602,9 @@ button:disabled{
     color: #505050;
     font-weight: lighter;
 }
-
+.row11 p{
+    margin: 0;
+}
 
 .section12{
     padding: 50px 100px;
@@ -1020,14 +1022,6 @@ button:disabled{
         display: block;
         padding: 50px 20px;
     }
-    .section7-mobile{
-        display: block;
-        padding: 50px 20px;
-    }
-    .section8-mobile{
-        display: block;
-        padding: 50px 20px;
-    }
     .disc{
         width: 12px;
         height: 12px;
@@ -1038,17 +1032,47 @@ button:disabled{
     .section7{
         display: none;
     }
+    .section7-mobile{
+        display: block;
+        padding: 50px 20px;
+    }
     .section8{
         display: none;
+    }
+    .section8-mobile{
+        display: block;
+        padding: 50px 20px;
     }
     .section9{
         display: none;
     }
+    .section9-mobile{
+        display: block;
+        padding: 50px 20px;
+    }
+    .right9 div{
+        width: 100%;
+    }
+    .right9 div h2{
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .right9 div p{
+        font-size: 15px;
+    }
     .section10{
         display: none;
     }
+    .section10-mobile{
+        display: block;
+        padding: 50px 20px;
+    }
     .section11{
         display: none;
+    }
+    .section11-mobile{
+        display: block;
+        padding: 50px 20px;
     }
     .section12{
         display: none;
