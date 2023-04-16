@@ -60,9 +60,9 @@ window.intlTelInput(input1, {
 // }
 
 // Programmatically click the button
-// setTimeout(() => {
-//   $(".modal").modal("show");
-// }, 1000);
+setTimeout(() => {
+  $(".modal").modal("show");
+}, 1000);
 
 var lottieElement = document.getElementById("lottieAnimation");
 
@@ -644,5 +644,4 @@ function hideMobileMenu(event) {
       document.querySelector(".mobileMenuContainer").style.display = "flex";
     }, 10);
   }
-  document.body.style.position = "relative";
 }
