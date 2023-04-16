@@ -482,7 +482,7 @@ button:disabled{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: 90px;
+    margin-top: 70px;
 }
 .plush-desc div{
     display: flex;
@@ -1021,6 +1021,10 @@ button:disabled{
         padding: 50px 20px;
     }
     .section7-mobile{
+        display: block;
+        padding: 50px 20px;
+    }
+    .section8-mobile{
         display: block;
         padding: 50px 20px;
     }
