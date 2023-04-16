@@ -948,6 +948,7 @@ button:disabled{
         z-index: 103;
     }
     .menu-link{
+        display: block;
         padding: 10px 20px;
         border-bottom: 0.1px solid #fff;
         font-size: 18px;
@@ -1092,6 +1093,6 @@ button:disabled{
         display: none;
     }
     footer{
-        /* display: none; */
+        display: none;
     }
 }
