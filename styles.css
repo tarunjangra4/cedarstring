@@ -1122,7 +1122,7 @@ button:disabled{
     }
     .moreText3{
         font-size: 10px;
-        padding-left: 10px;
+        /* padding-left: 10px; */
         text-align: justify;
     }
 }
