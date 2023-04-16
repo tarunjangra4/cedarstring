@@ -646,6 +646,11 @@ button:disabled{
     gap: 40px;
     align-items: center;
 }
+.enquirySubMain{
+    display: flex; 
+    gap: 25px; 
+    align-items: center;
+}
 .enquirySubMain input {
     padding: 20px;
 }
@@ -1093,6 +1098,31 @@ button:disabled{
         display: none;
     }
     footer{
-        display: none;
+        /* display: none; */
+    }
+    .enquiry3{
+        padding: 30px;
+    }
+    .enquiryMain3{
+        gap: 25px;
+    }
+    .enquirySubMain{
+        flex-direction: column;
+    }
+    .checkboxWrapper{
+        width: auto;
+        gap: 10px;
+    }
+    .checkboxWrapper input[type='checkbox']{
+        width: 10px;
+        height: 10px;
+    }
+    .lessText3{
+        font-size: 10px;
+    }
+    .moreText3{
+        font-size: 10px;
+        padding-left: 10px;
+        text-align: justify;
     }
 }
