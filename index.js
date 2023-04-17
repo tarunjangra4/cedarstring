@@ -59,11 +59,6 @@ window.intlTelInput(input1, {
 //     // Perform desired action here
 // }
 
-// Programmatically click the button
-setTimeout(() => {
-  $(".modal").modal("show");
-}, 1000);
-
 var lottieElement = document.getElementById("lottieAnimation");
 
 var animation = lottie.loadAnimation({
@@ -97,64 +92,61 @@ var observer = new IntersectionObserver(function (entries) {
 
 observer.observe(section);
 
-window.addEventListener("load", () => {
-  console.log("kadkjfakjjl");
-  dash1[0].style.width = "50px";
-  dash1[0].style.border = "1.5px solid black";
-  dash2[0].style.width = "50px";
-  dash2[0].style.border = "1.5px solid black";
-  dash3[0].style.width = "50px";
-  dash3[0].style.border = "1.5px solid black";
-  dash4[0].style.width = "50px";
-  dash4[0].style.border = "1.5px solid black";
-});
-
-var dash1 = document.querySelectorAll(".bottom-dash1");
-
-function changeDash(currentIndex) {
-  for (let i = 0; i < dash1.length; i++) {
-    dash1[i].style.width = "20px";
-    dash1[i].style.border = "1.5px solid rgb(214, 213, 213)";
-  }
-  dash1[currentIndex].style.width = "50px";
-  dash1[currentIndex].style.border = "1.5px solid rgb(113, 112, 112)";
-}
-
-var container = document.querySelector(".video-container1");
-var sections = document.querySelectorAll(".bed-video");
-var currentIndex = 0;
-
-// document.addEventListener("click", function () {
-//     sections[0].play();
+// window.addEventListener("load", () => {
+//   console.log("kadkjfakjjl");
+//   dash1[0].style.width = "50px";
+//   dash1[0].style.border = "1.5px solid black";
+//   dash2[0].style.width = "50px";
+//   dash2[0].style.border = "1.5px solid black";
+//   dash3[0].style.width = "50px";
+//   dash3[0].style.border = "1.5px solid black";
+//   dash4[0].style.width = "50px";
+//   dash4[0].style.border = "1.5px solid black";
 // });
 
-document.getElementById("rightScroll1").addEventListener("click", function () {
-  currentIndex++;
-  if (currentIndex >= sections.length) {
-    currentIndex = 0;
-  }
-  sections[currentIndex].scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-    inline: "nearest",
-  });
-  console.log("abc");
-  sections[currentIndex].play();
-  changeDash(currentIndex);
-});
+// var dash1 = document.querySelectorAll(".bottom-dash1");
 
-document.getElementById("leftScroll1").addEventListener("click", function () {
-  currentIndex--;
-  if (currentIndex < 0) {
-    currentIndex = sections.length - 1;
-  }
-  sections[currentIndex].scrollIntoView({ behavior: "smooth" });
-  sections[currentIndex].play();
-  changeDash(currentIndex);
-});
+// function changeDash(currentIndex) {
+//   for (let i = 0; i < dash1.length; i++) {
+//     dash1[i].style.width = "20px";
+//     dash1[i].style.border = "1.5px solid rgb(214, 213, 213)";
+//   }
+//   dash1[currentIndex].style.width = "50px";
+//   dash1[currentIndex].style.border = "1.5px solid rgb(113, 112, 112)";
+// }
+
+// var container = document.querySelector(".video-container1");
+// var sections = document.querySelectorAll(".bed-video");
+// var currentIndex = 0;
+
+// document.getElementById("rightScroll1").addEventListener("click", function () {
+//   currentIndex++;
+//   if (currentIndex >= sections.length) {
+//     currentIndex = 0;
+//   }
+//   sections[currentIndex].scrollIntoView({
+//     behavior: "smooth",
+//     block: "start",
+//     inline: "nearest",
+//   });
+//   if (currentIndex == 0) {
+//     sections[currentIndex].play();
+//   }
+//   changeDash(currentIndex);
+// });
+
+// document.getElementById("leftScroll1").addEventListener("click", function () {
+//   currentIndex--;
+//   if (currentIndex < 0) {
+//     currentIndex = sections.length - 1;
+//   }
+//   sections[currentIndex].scrollIntoView({ behavior: "smooth" });
+//   sections[currentIndex].play();
+//   changeDash(currentIndex);
+// });
+
 // var currentIndex = 1;
 // console.log("index ", currentIndex);
-
 // document.getElementById("rightScroll1").addEventListener("click", function () {
 //   currentIndex++;
 //   if (currentIndex >= sections.length) {
@@ -184,141 +176,129 @@ document.getElementById("leftScroll1").addEventListener("click", function () {
 //   sections[currentIndex].scrollIntoView({ behavior: "smooth" });
 // });
 
-var dash2 = document.querySelectorAll(".bottom-dash2");
+// var dash2 = document.querySelectorAll(".bottom-dash2");
 
-function changeDash2(currentIndex) {
-  for (let i = 0; i < dash2.length; i++) {
-    dash2[i].style.width = "20px";
-    dash2[i].style.border = "1.5px solid rgb(214, 213, 213)";
-  }
-  dash2[currentIndex].style.width = "50px";
-  dash2[currentIndex].style.border = "1.5px solid rgb(113, 112, 112)";
-}
+// function changeDash2(currentIndex) {
+//   for (let i = 0; i < dash2.length; i++) {
+//     dash2[i].style.width = "20px";
+//     dash2[i].style.border = "1.5px solid rgb(214, 213, 213)";
+//   }
+//   dash2[currentIndex].style.width = "50px";
+//   dash2[currentIndex].style.border = "1.5px solid rgb(113, 112, 112)";
+// }
 
-var container2 = document.querySelector(".video-container2");
-var sections2 = document.querySelectorAll(".living-video");
-var currentIndex2 = 0;
+// var container2 = document.querySelector(".video-container2");
+// var sections2 = document.querySelectorAll(".living-video");
+// var currentIndex2 = 0;
 
-document.addEventListener("click", function () {
-  //   sections2[0].play();
-});
+// document.getElementById("rightScroll2").addEventListener("click", function () {
+//   currentIndex2++;
+//   if (currentIndex2 >= sections2.length) {
+//     currentIndex2 = 0;
+//   }
+//   sections2[currentIndex2].scrollIntoView({
+//     behavior: "smooth",
+//     block: "start",
+//     inline: "nearest",
+//   });
+//   console.log("abc");
+//   sections2[currentIndex2].play();
+//   changeDash2(currentIndex2);
+// });
 
-document.getElementById("rightScroll2").addEventListener("click", function () {
-  currentIndex2++;
-  if (currentIndex2 >= sections2.length) {
-    currentIndex2 = 0;
-  }
-  sections2[currentIndex2].scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-    inline: "nearest",
-  });
-  console.log("abc");
-  sections2[currentIndex2].play();
-  changeDash2(currentIndex2);
-});
-
-document.getElementById("leftScroll2").addEventListener("click", function () {
-  currentIndex2--;
-  if (currentIndex2 < 0) {
-    currentIndex2 = sections2.length - 1;
-  }
-  sections2[currentIndex2].scrollIntoView({ behavior: "smooth" });
-  sections2[currentIndex2].play();
-  changeDash2(currentIndex2);
-});
+// document.getElementById("leftScroll2").addEventListener("click", function () {
+//   currentIndex2--;
+//   if (currentIndex2 < 0) {
+//     currentIndex2 = sections2.length - 1;
+//   }
+//   sections2[currentIndex2].scrollIntoView({ behavior: "smooth" });
+//   sections2[currentIndex2].play();
+//   changeDash2(currentIndex2);
+// });
 
 ////////////////////////////////
 ///////////////////////////////
 /////////////////////////////////section3
-var dash3 = document.querySelectorAll(".bottom-dash3");
+// var dash3 = document.querySelectorAll(".bottom-dash3");
 
-function changeDash3(currentIndex) {
-  for (let i = 0; i < dash3.length; i++) {
-    dash3[i].style.width = "20px";
-    dash3[i].style.border = "1.5px solid rgb(214, 213, 213)";
-  }
-  dash3[currentIndex].style.width = "50px";
-  dash3[currentIndex].style.border = "1.5px solid rgb(113, 112, 112)";
-}
+// function changeDash3(currentIndex) {
+//   for (let i = 0; i < dash3.length; i++) {
+//     dash3[i].style.width = "20px";
+//     dash3[i].style.border = "1.5px solid rgb(214, 213, 213)";
+//   }
+//   dash3[currentIndex].style.width = "50px";
+//   dash3[currentIndex].style.border = "1.5px solid rgb(113, 112, 112)";
+// }
 
-var container3 = document.querySelector(".video-container3");
-var sections3 = document.querySelectorAll(".bath-video");
-var currentIndex3 = 0;
+// var container3 = document.querySelector(".video-container3");
+// var sections3 = document.querySelectorAll(".bath-video");
+// var currentIndex3 = 0;
 
-document.addEventListener("click", function () {
-  //   sections3[0].play();
-});
+// document.getElementById("rightScroll3").addEventListener("click", function () {
+//   currentIndex3++;
+//   if (currentIndex3 >= sections3.length) {
+//     currentIndex3 = 0;
+//   }
+//   sections3[currentIndex3].scrollIntoView({
+//     behavior: "smooth",
+//     block: "start",
+//     inline: "nearest",
+//   });
+//   sections3[currentIndex3].play();
+//   changeDash3(currentIndex3);
+// });
 
-document.getElementById("rightScroll3").addEventListener("click", function () {
-  currentIndex3++;
-  if (currentIndex3 >= sections3.length) {
-    currentIndex3 = 0;
-  }
-  sections3[currentIndex3].scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-    inline: "nearest",
-  });
-  sections3[currentIndex3].play();
-  changeDash3(currentIndex3);
-});
-
-document.getElementById("leftScroll3").addEventListener("click", function () {
-  currentIndex3--;
-  if (currentIndex3 < 0) {
-    currentIndex3 = sections3.length - 1;
-  }
-  sections3[currentIndex3].scrollIntoView({ behavior: "smooth" });
-  sections3[currentIndex3].play();
-  changeDash3(currentIndex3);
-});
+// document.getElementById("leftScroll3").addEventListener("click", function () {
+//   currentIndex3--;
+//   if (currentIndex3 < 0) {
+//     currentIndex3 = sections3.length - 1;
+//   }
+//   sections3[currentIndex3].scrollIntoView({ behavior: "smooth" });
+//   sections3[currentIndex3].play();
+//   changeDash3(currentIndex3);
+// });
 
 ////////////////////////////////
 ///////////////////////////////
 /////////////////////////////////section3
-var dash4 = document.querySelectorAll(".bottom-dash4");
+// var dash4 = document.querySelectorAll(".bottom-dash4");
 
-function changeDash4(currentIndex) {
-  for (let i = 0; i < dash4.length; i++) {
-    dash4[i].style.width = "20px";
-    dash4[i].style.border = "1.5px solid rgb(214, 213, 213)";
-  }
-  dash4[currentIndex].style.width = "50px";
-  dash4[currentIndex].style.border = "1.5px solid rgb(113, 112, 112)";
-}
+// function changeDash4(currentIndex) {
+//   for (let i = 0; i < dash4.length; i++) {
+//     dash4[i].style.width = "20px";
+//     dash4[i].style.border = "1.5px solid rgb(214, 213, 213)";
+//   }
+//   dash4[currentIndex].style.width = "50px";
+//   dash4[currentIndex].style.border = "1.5px solid rgb(113, 112, 112)";
+// }
 
-var container4 = document.querySelector(".video-container4");
-var sections4 = document.querySelectorAll(".balc-video");
-var currentIndex4 = 0;
+// var container4 = document.querySelector(".video-container4");
+// var sections4 = document.querySelectorAll(".balc-video");
+// var currentIndex4 = 0;
 
-document.addEventListener("click", function () {
-  //   sections3[0].play();
-});
+// document.getElementById("rightScroll4").addEventListener("click", function () {
+//   currentIndex4++;
+//   if (currentIndex4 >= sections4.length) {
+//     currentIndex4 = 0;
+//   }
+//   sections4[currentIndex4].scrollIntoView({
+//     behavior: "smooth",
+//     block: "start",
+//     inline: "nearest",
+//   });
+//   sections4[currentIndex4].play();
+//   changeDash4(currentIndex4);
+// });
 
-document.getElementById("rightScroll4").addEventListener("click", function () {
-  currentIndex4++;
-  if (currentIndex4 >= sections4.length) {
-    currentIndex4 = 0;
-  }
-  sections4[currentIndex4].scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-    inline: "nearest",
-  });
-  sections4[currentIndex4].play();
-  changeDash4(currentIndex4);
-});
-
-document.getElementById("leftScroll4").addEventListener("click", function () {
-  currentIndex4--;
-  if (currentIndex4 < 0) {
-    currentIndex4 = sections4.length - 1;
-  }
-  sections4[currentIndex4].scrollIntoView({ behavior: "smooth" });
-  sections4[currentIndex4].play();
-  changeDash4(currentIndex4);
-});
+// document.getElementById("leftScroll4").addEventListener("click", function () {
+//   currentIndex4--;
+//   if (currentIndex4 < 0) {
+//     currentIndex4 = sections4.length - 1;
+//   }
+//   sections4[currentIndex4].scrollIntoView({ behavior: "smooth" });
+//   sections4[currentIndex4].play();
+//   changeDash4(currentIndex4);
+// });
 
 /////////////////////////    form    ////////////////////////
 ////////////////////////////////////////////////////////////
@@ -355,8 +335,8 @@ function openApi(name, phone, email, count) {
   let body = {
     phone: phone,
     name: name,
-    // projectId: 24,
-    projectId: 103,
+    projectId: 21,
+    // projectId: 103,
     email: email,
     ...(utm_campaign != null && { campaignCode: utm_campaign }),
     ...(searchParams?.entries?.length > 0 && {
@@ -372,32 +352,32 @@ function openApi(name, phone, email, count) {
     requireOtp: true,
   };
   axios
-    .post("http://api-dcrm-dev.fincity.in/open/opportunity", body)
+    .post("http://api-dcrm-stage.fincity.in/open/opportunity", body)
     .then((res) => {
-      //   if (isOtp) {
-      let enquiryForm = document.querySelector(
-        count == 1
-          ? ".enquiryMain1"
-          : count == 2
-          ? ".enquiryMain2"
-          : ".enquiryMain3"
-      );
-      let verifyOtp = document.querySelector(
-        count == 1
-          ? ".otpVerification1"
-          : count == 2
-          ? ".otpVerification2"
-          : ".otpVerification3"
-      );
-      enquiryForm.style.display = "none";
-      verifyOtp.style.display = "flex";
-      token = res?.data?.token;
-      sendOtp();
-      //   } else {
-      //     setTimeout(() => {
-      //         window.location.href = "thankyou.html";
-      //     }, 1000);
-      //   }
+      if (isOtp) {
+        let enquiryForm = document.querySelector(
+          count == 1
+            ? ".enquiryMain1"
+            : count == 2
+            ? ".enquiryMain2"
+            : ".enquiryMain3"
+        );
+        let verifyOtp = document.querySelector(
+          count == 1
+            ? ".otpVerification1"
+            : count == 2
+            ? ".otpVerification2"
+            : ".otpVerification3"
+        );
+        enquiryForm.style.display = "none";
+        verifyOtp.style.display = "flex";
+        token = res?.data?.token;
+        sendOtp();
+      } else {
+        setTimeout(() => {
+          window.location.href = "https://dcrm.fincity.com/?&user=consumer";
+        }, 1000);
+      }
     })
     .catch((error) => {});
 }
@@ -409,7 +389,7 @@ function sendOtp() {
   console.log(document.querySelector(".verfication-no3").innerHTML);
   axios
     .post(
-      `http://api-dcrm-dev.fincity.in/open/opportunity/send-otp?token=${token}`
+      `http://api-dcrm-stage.fincity.in/open/opportunity/send-otp?token=${token}`
     )
     .then((res) => {
       data = res?.data;
@@ -418,13 +398,13 @@ function sendOtp() {
 }
 
 function resendOtp(count) {
-  //   document.querySelector(".verfication-no1").innerHTML = phoneNo;
+  document.querySelector(".verfication-no1").innerHTML = phoneNo;
   //   document.querySelector(".verfication-no2").innerHTML = phoneNo;
   document.querySelector(".verfication-no3").innerHTML = phoneNo;
   console.log(document.querySelector(".verfication-no3").innerHTML);
   axios
     .post(
-      `http://api-dcrm-dev.fincity.in/open/opportunity/send-otp?token=${token}`
+      `http://api-dcrm-stage.fincity.in/open/opportunity/send-otp?token=${token}`
     )
     .then((res) => {
       data = res?.data;
@@ -456,7 +436,7 @@ function verifyOtp(e, check) {
   };
 
   axios
-    .post(`http://api-dcrm-dev.fincity.in/open/opportunity/verify`, body)
+    .post(`http://api-dcrm-stage.fincity.in/open/opportunity/verify`, body)
     .then((res) => {
       document.querySelector(
         check == 1
@@ -469,7 +449,7 @@ function verifyOtp(e, check) {
         check == 1 ? ".location1" : check == 2 ? ".location2" : ".location3"
       ).style.display = "flex";
       setTimeout(() => {
-        // window.location.href = "https://dcrm.fincity.com/?&user=consumer";
+        window.location.href = "https://dcrm.fincity.com/?&user=consumer";
       }, 5000);
     })
     .catch((err) => {});
@@ -500,7 +480,10 @@ function detectLocation(e, check) {
         };
 
         axios
-          .post(`http://api-dcrm-dev.fincity.in/open/opportunity/verify`, body)
+          .post(
+            `http://api-dcrm-stage.fincity.in/open/opportunity/verify`,
+            body
+          )
           .then((res) => {
             document.querySelector(
               check == 1
@@ -629,6 +612,11 @@ function moveFocusBack(e) {
     prevInput.focus();
   }
 }
+
+// Programmatically click the button
+setTimeout(() => {
+  $(".modal").modal("show");
+}, 1000);
 
 function showMobileMenu() {
   //   document.querySelector(".mobilemenu").style.display = "block";

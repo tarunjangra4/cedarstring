@@ -36,6 +36,10 @@ button:disabled{
     cursor: pointer;
     color: #000;
 }
+.nav-link a{
+    color: #000;
+    text-decoration: none;
+}
 .nav-link:hover{
     color: #000;
 }
@@ -207,7 +211,7 @@ button:disabled{
     /* justify-content: center; */
     gap: 50px;
     overflow: hidden;
-    box-shadow: inset 70px 0px 20px rgba(255, 255, 255, 0.7)
+    box-shadow: inset 70px 0px 20px rgba(255, 255, 255, 0.9)
 }
 .video-container1 video{
     height: 350px;
@@ -632,8 +636,8 @@ button:disabled{
 }
 
 .enquiry3{
-    width: 100%;
     display: flex;
+    width: 100%;
     flex-direction: column;
     background-color: #EAE5D0;
     gap: 80px;
@@ -1097,9 +1101,7 @@ button:disabled{
     .section13{
         display: none;
     }
-    footer{
-        /* display: none; */
-    }
+
     .enquiry3{
         padding: 30px;
     }
@@ -1124,5 +1126,8 @@ button:disabled{
         font-size: 10px;
         /* padding-left: 10px; */
         text-align: justify;
+    }
+    .mobile{
+        display: none;
     }
 }
