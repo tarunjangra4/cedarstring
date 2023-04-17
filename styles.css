@@ -273,10 +273,10 @@ button:disabled{
     position: absolute;
     top:0;
     right:0;
-    width: 70px;
+    width: 140px;
     height: 350px;
     z-index: 1;
-    background: linear-gradient(270,rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) url("./images/leftShadow.png") 0% 0% no-repeat padding-box;
+    background: transparent url("./images/leftShadow.png") 0% 0% no-repeat padding-box;
     /* box-shadow: inset -70px 0px 100px rgba(255, 255, 255, 0.9); */
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -1166,6 +1166,6 @@ button:disabled{
         text-align: justify;
     }
     .mobile{
-        display: none;
+        /* display: none; */
     }
 }
