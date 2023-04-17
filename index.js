@@ -375,7 +375,7 @@ function openApi(name, phone, email, count) {
         sendOtp();
       } else {
         setTimeout(() => {
-          window.location.href = "https://dcrm.fincity.com/?&user=consumer";
+          window.location.href = "thankyou.html";
         }, 1000);
       }
     })
