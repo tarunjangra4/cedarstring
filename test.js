@@ -26,6 +26,7 @@ function scrollRight1() {
   console.log(currentIndex1, targetPosition);
   container1.scrollTo({ left: targetPosition, behavior: "smooth" });
   changeDash1(currentIndex1);
+  playVideo1(currentIndex1);
 }
 
 function scrollLeft1() {
@@ -36,6 +37,7 @@ function scrollLeft1() {
   console.log(currentIndex1, targetPosition);
   container1.scrollTo({ left: targetPosition, behavior: "smooth" });
   changeDash1(currentIndex1);
+  playVideo1(currentIndex1);
 }
 
 var dash1 = document.querySelectorAll(".bottom-dash1");
@@ -47,6 +49,13 @@ function changeDash1(currentIndex) {
   }
   dash1[currentIndex].style.width = "50px";
   dash1[currentIndex].style.border = "1.5px solid rgb(113, 112, 112)";
+}
+
+function playVideo1(index) {
+  section1[0].pause();
+  section1[1].pause();
+  section1[2].pause();
+  section1[index].play();
 }
 
 /////////////////////////////222222222//////////////////////////////
@@ -64,6 +73,7 @@ function scrollRight2() {
   console.log(currentIndex2, targetPosition);
   container2.scrollTo({ left: targetPosition, behavior: "smooth" });
   changeDash2(currentIndex2);
+  playVideo2(currentIndex2);
 }
 
 function scrollLeft2() {
@@ -74,6 +84,7 @@ function scrollLeft2() {
   console.log(currentIndex2, targetPosition);
   container2.scrollTo({ left: targetPosition, behavior: "smooth" });
   changeDash2(currentIndex2);
+  playVideo2(currentIndex2);
 }
 
 var dash2 = document.querySelectorAll(".bottom-dash2");
@@ -87,6 +98,12 @@ function changeDash2(currentIndex) {
   dash2[currentIndex].style.border = "1.5px solid rgb(113, 112, 112)";
 }
 
+function playVideo2(index) {
+  section2[0].pause();
+  section2[1].pause();
+  section2[2].pause();
+  section2[index].play();
+}
 /////////////////////////////333333333//////////////////////////////
 /////////////////////////////333333333//////////////////////////////
 /////////////////////////////333333333//////////////////////////////
@@ -102,6 +119,7 @@ function scrollRight3() {
   console.log(currentIndex3, targetPosition);
   container3.scrollTo({ left: targetPosition, behavior: "smooth" });
   changeDash3(currentIndex3);
+  playVideo3(currentIndex3);
 }
 
 function scrollLeft3() {
@@ -112,6 +130,7 @@ function scrollLeft3() {
   console.log(currentIndex3, targetPosition);
   container3.scrollTo({ left: targetPosition, behavior: "smooth" });
   changeDash3(currentIndex3);
+  playVideo3(currentIndex3);
 }
 
 var dash3 = document.querySelectorAll(".bottom-dash3");
@@ -125,6 +144,11 @@ function changeDash3(currentIndex) {
   dash3[currentIndex].style.border = "1.5px solid rgb(113, 112, 112)";
 }
 
+function playVideo3(index) {
+  section3[0].pause();
+  section3[1].pause();
+  section3[index].play();
+}
 /////////////////////////////444444444//////////////////////////////
 /////////////////////////////444444444//////////////////////////////
 /////////////////////////////444444444//////////////////////////////
@@ -140,6 +164,7 @@ function scrollRight4() {
   console.log(currentIndex4, targetPosition);
   container4.scrollTo({ left: targetPosition, behavior: "smooth" });
   changeDash4(currentIndex4);
+  playVideo4(currentIndex4);
 }
 
 function scrollLeft4() {
@@ -150,6 +175,7 @@ function scrollLeft4() {
   console.log(currentIndex4, targetPosition);
   container4.scrollTo({ left: targetPosition, behavior: "smooth" });
   changeDash4(currentIndex4);
+  playVideo4(currentIndex4);
 }
 
 var dash4 = document.querySelectorAll(".bottom-dash4");
@@ -161,4 +187,11 @@ function changeDash4(currentIndex) {
   }
   dash4[currentIndex].style.width = "50px";
   dash4[currentIndex].style.border = "1.5px solid rgb(113, 112, 112)";
+}
+
+function playVideo4(index) {
+  section4[0].pause();
+  section4[1].pause();
+  section4[2].pause();
+  section4[index].play();
 }
