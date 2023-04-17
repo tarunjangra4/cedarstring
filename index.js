@@ -352,7 +352,7 @@ function openApi(name, phone, email, count) {
     requireOtp: true,
   };
   axios
-    .post("http://api-dcrm-stage.fincity.in/open/opportunity", body)
+    .post("https://api-dcrm.fincity.com/open/opportunity", body)
     .then((res) => {
       if (isOtp) {
         let enquiryForm = document.querySelector(
@@ -389,7 +389,7 @@ function sendOtp() {
   console.log(document.querySelector(".verfication-no3").innerHTML);
   axios
     .post(
-      `http://api-dcrm-stage.fincity.in/open/opportunity/send-otp?token=${token}`
+      `https://api-dcrm.fincity.com/open/opportunity/send-otp?token=${token}`
     )
     .then((res) => {
       data = res?.data;
@@ -404,7 +404,7 @@ function resendOtp(count) {
   console.log(document.querySelector(".verfication-no3").innerHTML);
   axios
     .post(
-      `http://api-dcrm-stage.fincity.in/open/opportunity/send-otp?token=${token}`
+      `https://api-dcrm.fincity.com/open/opportunity/send-otp?token=${token}`
     )
     .then((res) => {
       data = res?.data;
@@ -436,7 +436,7 @@ function verifyOtp(e, check) {
   };
 
   axios
-    .post(`http://api-dcrm-stage.fincity.in/open/opportunity/verify`, body)
+    .post(`https://api-dcrm.fincity.com/open/opportunity/verify`, body)
     .then((res) => {
       document.querySelector(
         check == 1
@@ -480,10 +480,7 @@ function detectLocation(e, check) {
         };
 
         axios
-          .post(
-            `http://api-dcrm-stage.fincity.in/open/opportunity/verify`,
-            body
-          )
+          .post(`https://api-dcrm.fincity.com/open/opportunity/verify`, body)
           .then((res) => {
             document.querySelector(
               check == 1
