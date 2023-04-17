@@ -7,8 +7,10 @@ var video1 = document.querySelector(".video-container1");
 function handleIntersection1(entries) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
+      console.log("if");
       section1[currentIndex1].play();
     } else {
+      console.log("else");
       section1[currentIndex1].pause();
     }
   });
