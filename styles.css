@@ -213,12 +213,30 @@ button:disabled{
     display: flex;
     gap: 50px;
     overflow: hidden;
-    box-shadow: inset 70px 0px 20px rgba(255, 255, 255, 0.9)
+    /* box-shadow: inset 70px 0px 20px rgba(255, 255, 255, 0.9) */
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 .video-container1 video{
     height: 350px;
     border-radius: 30px;
-    z-index: -1;
+    /* z-index: -1; */
+}
+.bluredRelative1{
+    position: relative;
+    height: 100%;
+}
+.blurred1{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 130px;
+    height: 350px;
+    z-index: 1;
+    background: transparent url("./images/leftShadow.png") 0% 0% no-repeat padding-box;
+    transform: rotate(180deg);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 .list1{
     margin-top: 30px;
@@ -277,7 +295,6 @@ button:disabled{
     height: 350px;
     z-index: 1;
     background: transparent url("./images/leftShadow.png") 0% 0% no-repeat padding-box;
-    /* box-shadow: inset -70px 0px 100px rgba(255, 255, 255, 0.9); */
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
 }
@@ -341,10 +358,11 @@ button:disabled{
     position: absolute;
     top:0;
     left:0;
-    width: 70px;
+    width: 140px;
     height: 350px;
     z-index: 1;
-    box-shadow: inset 70px 0px 20px rgba(255, 255, 255, 0.9);
+    background: transparent url("./images/leftShadow.png") 0% 0% no-repeat padding-box;
+    transform: rotate(180deg);
     /* border-top-right-radius: 30px;
     border-bottom-right-radius: 30px; */
 }
@@ -388,6 +406,7 @@ button:disabled{
     display: flex;
     gap: 50px;
     overflow: hidden;
+    border-radius: 30px;
     /* box-shadow: inset 70px 0px 20px rgba(255, 255, 255, 0.9) */
 }
 .video-container4 video{

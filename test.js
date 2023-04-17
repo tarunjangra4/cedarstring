@@ -22,7 +22,7 @@ function scrollRight1() {
   if (currentIndex1 < section1.length - 1) {
     currentIndex1++;
   }
-  let targetPosition = currentIndex1 * 610 + 50;
+  let targetPosition = currentIndex1 * 622 + 50;
   console.log(currentIndex1, targetPosition);
   container1.scrollTo({ left: targetPosition, behavior: "smooth" });
   changeDash1(currentIndex1);
@@ -60,7 +60,7 @@ function scrollRight2() {
   if (currentIndex2 < section2.length - 1) {
     currentIndex2++;
   }
-  let targetPosition = currentIndex2 * 610 + 50;
+  let targetPosition = currentIndex2 * 622 + 50;
   console.log(currentIndex2, targetPosition);
   container2.scrollTo({ left: targetPosition, behavior: "smooth" });
   changeDash2(currentIndex2);
@@ -98,7 +98,7 @@ function scrollRight3() {
   if (currentIndex3 < section3.length - 1) {
     currentIndex3++;
   }
-  let targetPosition = currentIndex3 * 610 + 50;
+  let targetPosition = currentIndex3 * 622 + 50;
   console.log(currentIndex3, targetPosition);
   container3.scrollTo({ left: targetPosition, behavior: "smooth" });
   changeDash3(currentIndex3);
@@ -136,7 +136,7 @@ function scrollRight4() {
   if (currentIndex4 < section4.length - 1) {
     currentIndex4++;
   }
-  let targetPosition = currentIndex4 * 610 + 50;
+  let targetPosition = currentIndex4 * 622 + 50;
   console.log(currentIndex4, targetPosition);
   container4.scrollTo({ left: targetPosition, behavior: "smooth" });
   changeDash4(currentIndex4);
