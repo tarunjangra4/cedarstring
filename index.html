@@ -34,6 +34,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
 
     <!-- <link
@@ -139,10 +145,12 @@
             style="width: 120px; height: 120px; margin-bottom: 30px"
             src="./images/Group46.svg"
           />
-          <p style="font-size: 60px; font-weight: 800">6,616 Sq. ft.</p>
-          <p style="font-size: 34px">of Pure Bliss</p>
+          <p class="heading" style="font-size: 60px; font-weight: 800">
+            6,616 Sq. ft.
+          </p>
+          <p class="heading" style="font-size: 34px">of Pure Bliss</p>
           <button
-            class="btn1"
+            class="btn1 heading"
             type="button"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
@@ -156,7 +164,7 @@
       </div>
       <div class="banner-desc-container">
         <div>
-          <h2 style="position: relative">
+          <h2 class="heading" style="position: relative">
             NO GST<span class="gst-back"></span>
           </h2>
           <p style="color: #5c5c5c">
@@ -165,7 +173,7 @@
           </p>
         </div>
         <div>
-          <h2 style="position: relative">
+          <h2 class="heading" style="position: relative">
             Vaastu compliant<span class="vaastu-back"></span>
           </h2>
           <p style="color: #5c5c5c">
@@ -241,7 +249,10 @@
     </section>
     <section class="section2">
       <div>
-        <h1 style="font-size: 60px; font-weight: 500; position: relative">
+        <h1
+          class="heading"
+          style="font-size: 60px; font-weight: 500; position: relative"
+        >
           A Personal Retreat
           <span style="font-size: 30px; font-weight: 400"
             >right in the city</span
@@ -252,7 +263,7 @@
           <div class="bed-desc">
             <div style="display: flex; align-items: center; gap: 20px">
               <img width="64px" height="64px" src="./images/bedIcon.svg" />
-              <p style="font-size: 28px">
+              <p class="heading" style="font-size: 28px">
                 Bedroom <br /><span style="font-weight: 600">4</span>
               </p>
             </div>
@@ -444,29 +455,36 @@
               onclick="scrollRight2()"
             />
           </div>
-          <div class="video-container2">
-            <video
-              class="living-video"
-              id="myVideo"
-              autoplay
-              loop
-              src="./images/Final Living.mp4"
-            ></video>
-            <video
-              class="living-video"
-              id="myVideo"
-              autoplay
-              loop
-              src="./images/Final Living.mp4"
-            ></video>
-            <video
-              class="living-video"
-              id="myVideo"
-              autoplay
-              loop
-              src="./images/Final Living.mp4"
-            ></video>
+
+          <div>
+            <div class="bluredRelative2">
+              <div class="blurred2"></div>
+            </div>
+            <div class="video-container2">
+              <video
+                class="living-video"
+                id="myVideo"
+                autoplay
+                loop
+                src="./images/Final Living.mp4"
+              ></video>
+              <video
+                class="living-video"
+                id="myVideo"
+                autoplay
+                loop
+                src="./images/Final Living.mp4"
+              ></video>
+              <video
+                class="living-video"
+                id="myVideo"
+                autoplay
+                loop
+                src="./images/Final Living.mp4"
+              ></video>
+            </div>
           </div>
+
           <div
             style="
               display: flex;
@@ -483,7 +501,7 @@
         <div class="living-desc">
           <div style="display: flex; align-items: center; gap: 20px">
             <img width="64px" height="64px" src="./images/livingIcon.svg" />
-            <p style="font-size: 28px">
+            <p class="heading" style="font-size: 28px">
               Living Rooms <br /><span style="font-weight: 600">2</span>
             </p>
           </div>
@@ -656,7 +674,7 @@
         <div class="bath-desc">
           <div style="display: flex; align-items: center; gap: 20px">
             <img width="64px" height="64px" src="./images/bathIcon.svg" />
-            <p style="font-size: 28px">
+            <p class="heading" style="font-size: 28px">
               Bath Rooms <br /><span style="font-weight: 600">2</span>
             </p>
           </div>
@@ -696,28 +714,33 @@
               onclick="scrollRight3()"
             />
           </div>
-          <div class="video-container3">
-            <video
-              class="bath-video"
-              id="myVideo"
-              autoplay
-              loop
-              src="./images/Final Bath.mp4"
-            ></video>
-            <video
-              class="bath-video"
-              id="myVideo"
-              autoplay
-              loop
-              src="./images/Final Bath.mp4"
-            ></video>
-            <video
-              class="bath-video"
-              id="myVideo"
-              autoplay
-              loop
-              src="./images/Final Bath.mp4"
-            ></video>
+          <div class="">
+            <div class="bluredRelative3">
+              <div class="blurred3"></div>
+            </div>
+            <div class="video-container3">
+              <video
+                class="bath-video"
+                id="myVideo"
+                autoplay
+                loop
+                src="./images/Final Bath.mp4"
+              ></video>
+              <video
+                class="bath-video"
+                id="myVideo"
+                autoplay
+                loop
+                src="./images/Final Bath.mp4"
+              ></video>
+              <video
+                class="bath-video"
+                id="myVideo"
+                autoplay
+                loop
+                src="./images/Final Bath.mp4"
+              ></video>
+            </div>
           </div>
           <div
             style="
@@ -800,7 +823,7 @@
         <div class="balc-desc">
           <div style="display: flex; align-items: center; gap: 20px">
             <img width="64px" height="64px" src="./images/balconyIcon.svg" />
-            <p style="font-size: 28px">
+            <p class="heading" style="font-size: 28px">
               Balconies <br /><span style="font-weight: 600">3</span>
             </p>
           </div>
@@ -816,6 +839,7 @@
       <img height="550px" src="./images/Courtyard.png" />
       <div style="padding: 50px 140px">
         <h1
+          class="heading"
           style="
             font-size: 60px;
             font-weight: 400;
@@ -830,7 +854,7 @@
           <div class="court-desc">
             <div>
               <span class="disc"></span>
-              <h2>
+              <h2 class="heading">
                 Well lit and well<br />
                 ventilated
               </h2>
@@ -848,7 +872,7 @@
           <div class="court-desc">
             <div>
               <span class="disc"></span>
-              <h2>Traditional layout</h2>
+              <h2 class="heading">Traditional layout</h2>
             </div>
             <div>
               <span
@@ -863,7 +887,7 @@
           <div class="court-desc">
             <div>
               <span class="disc"></span>
-              <h2>
+              <h2 class="heading">
                 Omani Marble<br />
                 Flooring
               </h2>
@@ -878,7 +902,7 @@
           <div class="court-desc">
             <div>
               <span class="disc"></span>
-              <h2>Marble stair case</h2>
+              <h2 class="heading">Marble stair case</h2>
             </div>
             <div>
               <span
@@ -1018,6 +1042,7 @@
     </section>
     <section class="section7">
       <h1
+        class="heading"
         style="
           font-size: 60px;
           font-weight: 400;
@@ -1048,7 +1073,7 @@
       </p>
     </section>
     <section class="section7-mobile mobile">
-      <h1 style="position: relative">
+      <h1 class="heading" style="position: relative">
         Bring the Outside in.<span
           style="
             position: absolute;
@@ -1084,6 +1109,7 @@
     <section class="section8">
       <div class="left8">
         <h1
+          class="heading"
           style="
             font-size: 60px;
             font-weight: 400;
@@ -1097,7 +1123,7 @@
         <div class="plush-desc">
           <div>
             <span class="disc"></span>
-            <h2>Terrace Garden</h2>
+            <h2 class="heading">Terrace Garden</h2>
           </div>
           <div>
             <span
@@ -1112,7 +1138,7 @@
         <div class="plush-desc">
           <div>
             <span class="disc"></span>
-            <h2>Front Lawn</h2>
+            <h2 class="heading">Front Lawn</h2>
           </div>
           <div>
             <span
@@ -1170,6 +1196,7 @@
     <section class="section9">
       <div class="top9">
         <h1
+          class="heading"
           style="
             font-size: 60px;
             font-weight: 400;
@@ -1280,6 +1307,7 @@
     </section>
     <section class="section10" id="floorPlan">
       <h1
+        class="heading"
         style="
           font-size: 60px;
           font-weight: 400;
@@ -1314,6 +1342,7 @@
     </section>
     <section class="section11" id="amenities">
       <h1
+        class="heading"
         style="
           font-size: 60px;
           font-weight: 400;
@@ -1461,6 +1490,7 @@
     <section class="section12" id="location">
       <div style="display: flex; justify-content: space-between">
         <h1
+          class="heading"
           style="
             font-size: 60px;
             font-weight: 400;
@@ -1487,7 +1517,7 @@
         <div>
           <div style="display: flex; gap: 20px">
             <img width="58px" height="58px" src="./images/school.png" />
-            <p style="font-size: 22px">
+            <p class="heading" style="font-size: 22px">
               Near by<br /><span style="font-size: 32px">Schools/Colleges</span>
             </p>
           </div>
@@ -1557,9 +1587,9 @@
         >
           <h1
             style="font-weight: 400; color: #000; text-align: center"
-            class="headerText"
+            class="headerText heading"
           >
-            ENQUIRE NOW
+            Enquire Now
           </h1>
           <div class="enquirySubMain">
             <input
