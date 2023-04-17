@@ -335,8 +335,8 @@ function openApi(name, phone, email, count) {
   let body = {
     phone: phone,
     name: name,
-    projectId: 21,
-    // projectId: 103,
+    // projectId: 21,
+    projectId: 103,
     email: email,
     ...(utm_campaign != null && { campaignCode: utm_campaign }),
     ...(searchParams?.entries?.length > 0 && {
