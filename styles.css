@@ -432,7 +432,7 @@ button:disabled{
 
 .section6{
     display: flex;
-    padding: 50px 0 50px 150px;
+    padding: 70px 0 50px 150px;
     background-color: #F2F2F2;
 }
 .right6{
@@ -440,7 +440,7 @@ button:disabled{
     justify-content: space-between;
     row-gap: 50px;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 .right6 .court-desc{
     width: 40%;
@@ -685,10 +685,10 @@ button:disabled{
 
 .list12{
     margin-left: 13px;
-    margin-top: 40px;
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 20px;
     color: #757373;
 }
 

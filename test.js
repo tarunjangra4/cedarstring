@@ -7,6 +7,9 @@ var video1 = document.querySelector(".video-container1");
 function handleIntersection1(entries) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
+      section1[0].pause();
+      section1[1].pause();
+      section1[2].pause();
       section1[currentIndex1].play();
     } else {
       section1[currentIndex1].pause();
@@ -21,6 +24,9 @@ var video2 = document.querySelector(".video-container2");
 function handleIntersection2(entries) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
+      section2[0].pause();
+      section2[1].pause();
+      section2[2].pause();
       section2[currentIndex2].play();
     } else {
       section2[currentIndex2].pause();
@@ -35,6 +41,8 @@ var video3 = document.querySelector(".video-container3");
 function handleIntersection3(entries) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
+      section3[0].pause();
+      section3[1].pause();
       section3[currentIndex3].play();
     } else {
       section3[currentIndex3].pause();
@@ -49,6 +57,9 @@ var video4 = document.querySelector(".video-container4");
 function handleIntersection4(entries) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
+      section4[0].pause();
+      section4[1].pause();
+      section4[2].pause();
       section4[currentIndex4].play();
     } else {
       section4[currentIndex4].pause();
