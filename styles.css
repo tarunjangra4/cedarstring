@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+p{
+    font-family: 'Montserrat', sans-serif;
+}
 button:disabled{
     cursor: not-allowed;
 }
@@ -493,6 +496,7 @@ button:disabled{
 .court-desc p{
     font-weight: lighter;
     color: #494949;
+    line-height: 1.2;
 }
 /* .court-details::before{
     display: inline-block;
@@ -748,6 +752,9 @@ button:disabled{
 .checkboxWrapper input[type='checkbox']:after{
     background-color: #fff;
 }
+.checkbox3{
+    margin-top: 6px
+}
 .enquirBbutton:disabled {
     cursor: not-allowed;
 }
@@ -943,16 +950,16 @@ button:disabled{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1px solid violet;
         padding: 24px 15px;
         background-color: #fff;
+        box-shadow: 7px 7px 7px #00000033;;
     }
     .phoneCall{
         background-color: #17423b;
         border-radius: 50%;
         padding: 5px 7px 7px 7px;
-        width: 32px;
-        height: 32px;
+        width: 34px;
+        height: 34px;
         vertical-align: middle;
         display: flex;
         animation: shaking 0.3s infinite;
@@ -996,7 +1003,6 @@ button:disabled{
         justify-content: end;
         transition: width 1s 0s;
         z-index: 103;
-        background-color: #000;
     }
     .menu-back{
         position: absolute;
@@ -1019,6 +1025,10 @@ button:disabled{
         border-bottom: 0.1px solid #fff;
         font-size: 18px;
     }
+    .menu-link a{
+        color: #fff;
+        text-decoration: none;
+    }
     .closeBtn{
         border: 0;
         background-color: #202020;
@@ -1034,9 +1044,30 @@ button:disabled{
         align-items: center;
         overflow: hidden;
     }
+    .mobile-banner-container::after{
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 200px;
+        height: 40px;
+        background: #fff;
+        border-top-right-radius: 45px;
+    }
     .section1-mobile{
+        position: relative;
         display: block;
         margin-top: 570px;
+        margin-bottom: 40px;
+    }
+    .section1-mobile::after{
+        content: " ";
+        position: absolute;
+        bottom: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-bottom: 1px solid rgb(217, 216, 216);
+        width: 74%;
     }
     .modal-content{
         width: 330px;
@@ -1054,10 +1085,24 @@ button:disabled{
     .section2-mobile{
         position: relative;
         display: block;
-        margin-top: 50px;
+        padding: 30px 0 30px 20px;
         z-index: 2;
         background-color: #fff;
-        padding-left: 20px;
+    }
+    .gray{
+        background-color: #F2F2F2;
+    }
+    .first::after{
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+        border-bottom: 1px solid rgb(186, 185, 185);
+    }
+    .mobScroll{
+        overflow: hidden;
     }
     .retreat-path{
         position: relative;
@@ -1090,7 +1135,8 @@ button:disabled{
     }
     .section6-mobile{
         display: block;
-        padding: 50px 20px;
+        padding: 40px 20px;
+        background-color: #F2F2F2;
     }
     .disc{
         width: 12px;
@@ -1104,14 +1150,37 @@ button:disabled{
     }
     .section7-mobile{
         display: block;
-        padding: 50px 20px;
+        padding: 30px 20px;
     }
     .section8{
         display: none;
     }
     .section8-mobile{
+        position: relative;
         display: block;
-        padding: 50px 20px;
+        padding: 46px 20px;
+        background-color: #F2F2F2;
+    }
+    .plushGarden{
+        position: relative;
+        display: flex;
+        justify-content: end;
+        margin: 40px 0;
+    }
+    .section8-mobile::before{
+        position: absolute;
+        content: " ";
+        background-image: url('./images/pathright.svg');
+        transform: rotate(90deg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+        left: -15%;
+        top: 30%;
+        width: 250px;
+        height: 18px;
+        z-index: 2;
     }
     .section9{
         display: none;
@@ -1136,6 +1205,7 @@ button:disabled{
     .section10-mobile{
         display: block;
         padding: 50px 20px;
+        background-color: #F2F2F2;
     }
     .section11{
         display: none;
@@ -1150,6 +1220,7 @@ button:disabled{
     .section12-mobile{
         display: block;
         padding: 50px 20px;
+        background-color: #F2F2F2;
     }
     .list12{
         margin-left: 5px;
@@ -1176,6 +1247,9 @@ button:disabled{
         width: 10px;
         height: 10px;
     }
+    .checkbox3{
+        margin-top: 0;
+    }
     .lessText3{
         font-size: 10px;
     }
@@ -1185,6 +1259,6 @@ button:disabled{
         text-align: justify;
     }
     .mobile{
-        /* display: none; */
+        display: none;
     }
 }

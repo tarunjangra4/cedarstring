@@ -37,7 +37,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Montserrat&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -62,7 +62,9 @@
     <section class="header">
       <nav class="nav-container">
         <div style="display: flex; align-items: center">
-          <img width="250px" src="./images/projectIcon.png" />
+          <a href="#home"
+            ><img width="250px" src="./images/projectIcon.png"
+          /></a>
         </div>
         <div class="nav-link-container">
           <ul class="nav-links">
@@ -88,12 +90,14 @@
           </div>
         </div>
       </nav>
-      <nav class="mobile-nav-container mobile">
+      <nav class="mobile-nav-container">
         <img width="150px" height="40px" src="./images/projectIcon.png" />
         <div>
           <div style="display: flex; gap: 20px">
             <div class="phoneCall">
-              <img src="./images/callIcon.svg" />
+              <a style="display: flex" href="tel:+919513885775"
+                ><img width="20px" src="./images/callIcon.svg" alt=""
+              /></a>
             </div>
             <div
               class="menuIcon"
@@ -107,7 +111,7 @@
           </div>
         </div>
       </nav>
-      <div class="mobileMenuContainer mobile" onclick="hideMobileMenu(event)">
+      <div class="mobileMenuContainer" onclick="hideMobileMenu(event)">
         <div class="menu-back"></div>
         <div class="mobilemenu">
           <div
@@ -118,18 +122,19 @@
               align-items: center;
             "
           >
-            <i style="padding-top: 8px" class="fas fa-home"></i>
+            <a href="#home1"
+              ><i style="padding-top: 8px" class="fas fa-home"></i
+            ></a>
             <button class="closeBtn">x</button>
           </div>
           <div class="menu-link"><a>About</a></div>
-          <div class="menu-link"><a>Floor Plans</a></div>
-          <div class="menu-link"><a>Amenities</a></div>
-          <div class="menu-link"><a>Location</a></div>
+          <div class="menu-link"><a href="#floorPlan1">Floor Plans</a></div>
+          <div class="menu-link"><a href="#amenities1">Amenities</a></div>
+          <div class="menu-link"><a href="#location1">Location</a></div>
         </div>
       </div>
     </section>
-
-    <section class="banner-image">
+    <section id="home" class="banner-image">
       <img id="zoom" src="./images/Banner.png" />
       <div
         style="
@@ -154,7 +159,6 @@
             type="button"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
-            onclick="test(event)"
           >
             Ready to move
           </button>
@@ -183,11 +187,40 @@
         </div>
       </div>
     </section>
-    <section class="mobile-banner-container mobile">
+    <section id="home1" class="mobile-banner-container">
       <img height="700px" width="220%" src="./images/Banner.png" />
+      <div class="project-desc" style="width: 100%; left: 0; bottom: 7%">
+        <img
+          style="width: 90px; height: 90px; margin-bottom: 10px"
+          src="./images/Group46.svg"
+        />
+        <p class="heading" style="font-size: 44px; font-weight: 800; margin: 0">
+          6,613 <span style="font-size: 30px; font-weight: 600">sq. ft.</span>
+        </p>
+        <p
+          class="heading"
+          style="font-size: 30px; font-weight: 500; margin-bottom: 10px"
+        >
+          of Pure Bliss
+        </p>
+        <button
+          style="margin: 0; font-size: 18px; padding: 8px 26px"
+          class="btn1 heading"
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Ready to move
+        </button>
+        <p style="font-size: 16px; margin: 0; margin-top: 10px">
+          Ultra Luxury Row Villas at Thanisandra
+        </p>
+        <p style="font-size: 20px">₹7 Crore Onwards</p>
+      </div>
     </section>
-    <section class="section1-mobile mobile">
+    <section class="section1-mobile">
       <h2
+        class="heading"
         style="
           position: relative;
           margin-top: 16px;
@@ -217,6 +250,7 @@
         leaving your home.
       </p>
       <h2
+        class="heading"
         style="
           position: relative;
           margin-top: 16px;
@@ -316,7 +350,7 @@
                 <video
                   class="bed-video"
                   id="myVideo1"
-                  autoplay
+                  muted
                   loop
                   src="./images/Final Bedroom.mp4"
                 ></video>
@@ -327,7 +361,7 @@
                 <video
                   class="bed-video"
                   id="myVideo2"
-                  autoplay
+                  muted
                   loop
                   src="./images/Bedroom-2.mp4"
                 ></video>
@@ -338,7 +372,7 @@
                 <video
                   class="bed-video"
                   id="myVideo"
-                  autoplay
+                  muted
                   loop
                   src="./images/Bedroom-3.mp4"
                 ></video>
@@ -364,8 +398,11 @@
         </div>
       </div>
     </section>
-    <section class="section2-mobile mobile">
-      <h2 style="position: relative; margin-top: 16px; width: 100%">
+    <section class="section2-mobile">
+      <h2
+        class="heading"
+        style="position: relative; margin-top: 16px; width: 100%"
+      >
         A Personal Retreat<span style="font-size: 17px; margin-left: 7px"
           >right in the city</span
         ><span
@@ -387,7 +424,7 @@
         style="display: flex; margin-top: 30px; gap: 20px"
       >
         <img width="54px" src="./images/bedIcon.svg" />
-        <span style="font-size: 22px; line-height: 1.2">
+        <span class="heading" style="font-size: 22px; line-height: 1.2">
           Bedroom<br /><span style="font-weight: 700">4</span>
         </span>
       </div>
@@ -406,28 +443,47 @@
         <li>Bedroom 3</li>
         <li>Bedroom 4</li>
       </ul>
-      <div style="display: flex; overflow: scroll; gap: 30px">
+      <div
+        style="
+          display: flex;
+          gap: 20px;
+          margin: 0 20px 20px 0;
+          justify-content: end;
+        "
+      >
+        <img
+          onclick="scrollLeft5()"
+          width="24px"
+          src="./images/arrow-left.svg"
+        />
+        <img
+          onclick="scrollRight5()"
+          width="24px"
+          src="./images/arrow-right.svg"
+        />
+      </div>
+      <div class="mobContainer1 mobScroll" style="display: flex; gap: 30px">
         <video
+          class="mobVideo1"
           width="75%"
           style="border-radius: 20px"
-          id="myVideo"
-          autoplay
+          muted
           loop
           src="./images/Final Bedroom.mp4"
         ></video>
         <video
+          class="mobVideo1"
           width="75%"
           style="border-radius: 20px"
-          id="myVideo"
-          autoplay
+          muted
           loop
           src="./images/Bedroom-2.mp4"
         ></video>
         <video
+          class="mobVideo1"
           width="75%"
           style="border-radius: 20px; margin-right: 20px"
-          id="myVideo"
-          autoplay
+          muted
           loop
           src="./images/Bedroom-3.mp4"
         ></video>
@@ -469,21 +525,21 @@
               <video
                 class="living-video"
                 id="myVideo"
-                autoplay
+                muted
                 loop
                 src="./images/Final Living.mp4"
               ></video>
               <video
                 class="living-video"
                 id="myVideo"
-                autoplay
+                muted
                 loop
                 src="./images/livingRoom-2.mp4"
               ></video>
               <video
                 class="living-video"
                 id="myVideo"
-                autoplay
+                muted
                 loop
                 src="./images/livingRoom-3.mp4"
               ></video>
@@ -518,13 +574,10 @@
         </div>
       </div>
     </section>
-    <section class="section2-mobile mobile">
-      <div
-        class="retreat-path"
-        style="display: flex; margin-top: 30px; gap: 20px"
-      >
+    <section class="section2-mobile gray first">
+      <div class="retreat-path" style="display: flex; gap: 20px">
         <img width="54px" src="./images/livingIcon.svg" />
-        <span style="font-size: 22px; line-height: 1.2">
+        <span class="heading" style="font-size: 22px; line-height: 1.2">
           Living Rooms<br /><span style="font-weight: 700">2</span>
         </span>
       </div>
@@ -542,40 +595,56 @@
         <li>Central Air Conditioning</li>
         <li>High Ceiling Height</li>
       </ul>
-      <div style="display: flex; overflow: scroll; gap: 30px">
+      <div
+        style="
+          display: flex;
+          gap: 20px;
+          margin: 0 20px 20px 0;
+          justify-content: end;
+        "
+      >
+        <img
+          onclick="scrollLeft6()"
+          width="24px"
+          src="./images/arrow-left.svg"
+        />
+        <img
+          onclick="scrollRight6()"
+          width="24px"
+          src="./images/arrow-right.svg"
+        />
+      </div>
+      <div class="mobContainer2 mobScroll" style="display: flex; gap: 30px">
         <video
+          class="mobVideo2"
           width="75%"
           style="border-radius: 20px"
-          id="myVideo"
-          autoplay
+          muted
           loop
           src="./images/Final Living.mp4"
         ></video>
         <video
+          class="mobVideo2"
           width="75%"
           style="border-radius: 20px"
-          id="myVideo"
-          autoplay
+          muted
           loop
-          src="./images/Final Living.mp4"
+          src="./images/livingRoom-2.mp4"
         ></video>
         <video
+          class="mobVideo2"
           width="75%"
           style="border-radius: 20px; margin-right: 20px"
-          id="myVideo"
-          autoplay
+          muted
           loop
-          src="./images/Final Living.mp4"
+          src="./images/livingRoom-3.mp4"
         ></video>
       </div>
     </section>
-    <section class="section2-mobile mobile">
-      <div
-        class="retreat-path"
-        style="display: flex; margin-top: 30px; gap: 20px"
-      >
+    <section class="section2-mobile gray">
+      <div class="retreat-path" style="display: flex; gap: 20px">
         <img width="54px" src="./images/bathIcon.svg" />
-        <span style="font-size: 22px; line-height: 1.2">
+        <span class="heading" style="font-size: 22px; line-height: 1.2">
           Bath Rooms<br /><span style="font-weight: 700">7</span>
         </span>
       </div>
@@ -596,32 +665,50 @@
           Maid’s bathroom
         </li>
       </ul>
-      <div style="display: flex; overflow: scroll; gap: 30px">
+      <div
+        style="
+          display: flex;
+          gap: 20px;
+          margin: 0 20px 20px 0;
+          justify-content: end;
+        "
+      >
+        <img
+          onclick="scrollLeft7()"
+          width="24px"
+          src="./images/arrow-left.svg"
+        />
+        <img
+          onclick="scrollRight7()"
+          width="24px"
+          src="./images/arrow-right.svg"
+        />
+      </div>
+      <div class="mobContainer3 mobScroll" style="display: flex; gap: 30px">
         <video
+          class="mobVideo3"
           width="75%"
           style="border-radius: 20px"
           id="myVideo"
-          autoplay
+          muted
           loop
           src="./images/Final Bath.mp4"
         ></video>
         <video
+          class="mobVideo3"
           width="75%"
           style="border-radius: 20px"
           id="myVideo"
-          autoplay
+          muted
           loop
           src="./images/bathRoom-2.mp4"
         ></video>
       </div>
     </section>
-    <section class="section2-mobile mobile">
-      <div
-        class="retreat-path"
-        style="display: flex; margin-top: 30px; gap: 20px"
-      >
+    <section class="section2-mobile">
+      <div class="retreat-path" style="display: flex; gap: 20px">
         <img width="54px" src="./images/balconyIcon.svg" />
-        <span style="font-size: 22px; line-height: 1.2">
+        <span class="heading" style="font-size: 22px; line-height: 1.2">
           Balconies<br /><span style="font-weight: 700">3</span>
         </span>
       </div>
@@ -639,30 +726,49 @@
         <li>Pool View</li>
         <li>Sunrise View</li>
       </ul>
-      <div style="display: flex; overflow: scroll; gap: 30px">
+      <div
+        style="
+          display: flex;
+          gap: 20px;
+          margin: 0 20px 20px 0;
+          justify-content: end;
+        "
+      >
+        <img
+          onclick="scrollLeft8()"
+          width="24px"
+          src="./images/arrow-left.svg"
+        />
+        <img
+          onclick="scrollRight8()"
+          width="24px"
+          src="./images/arrow-right.svg"
+        />
+      </div>
+      <div class="mobContainer4 mobScroll" style="display: flex; gap: 30px">
         <video
+          class="mobVideo4"
           width="75%"
           style="border-radius: 20px"
-          id="myVideo"
-          autoplay
+          muted
           loop
           src="./images/Final Balcony.mp4"
         ></video>
         <video
+          class="mobVideo4"
           width="75%"
           style="border-radius: 20px"
-          id="myVideo"
-          autoplay
+          muted
           loop
-          src="./images/Final Balcony.mp4"
+          src="./images/Balcony-2.mp4"
         ></video>
         <video
+          class="mobVideo4"
           width="75%"
           style="border-radius: 20px; margin-right: 20px"
-          id="myVideo"
-          autoplay
+          muted
           loop
-          src="./images/Final Balcony.mp4"
+          src="./images/Balcony-3.mp4"
         ></video>
       </div>
     </section>
@@ -719,14 +825,14 @@
               <video
                 class="bath-video"
                 id="myVideo"
-                autoplay
+                muted
                 loop
                 src="./images/Final Bath.mp4"
               ></video>
               <video
                 class="bath-video"
                 id="myVideo"
-                autoplay
+                muted
                 loop
                 src="./images/bathRoom-2.mp4"
               ></video>
@@ -781,21 +887,21 @@
               <video
                 class="balc-video"
                 id="myVideo"
-                autoplay
+                muted
                 loop
                 src="./images/Final Balcony.mp4"
               ></video>
               <video
                 class="balc-video"
                 id="myVideo"
-                autoplay
+                muted
                 loop
                 src="./images/Balcony-2.mp4"
               ></video>
               <video
                 class="balc-video"
                 id="myVideo"
-                autoplay
+                muted
                 loop
                 src="./images/Balcony-3.mp4"
               ></video>
@@ -914,8 +1020,8 @@
         </div>
       </div>
     </section>
-    <section class="section6-mobile mobile">
-      <h1 style="position: relative">
+    <section class="section6-mobile">
+      <h1 class="heading" style="position: relative">
         Central Courtyard<span
           style="
             position: absolute;
@@ -938,8 +1044,9 @@
           <div>
             <span class="disc"></span>
             <p
+              class="heading"
               style="
-                font-size: 24px;
+                font-size: 22px;
                 font-weight: 400;
                 margin: 0;
                 line-height: 1.2;
@@ -963,8 +1070,9 @@
           <div>
             <span class="disc"></span>
             <p
+              class="heading"
               style="
-                font-size: 24px;
+                font-size: 22px;
                 font-weight: 400;
                 margin: 0;
                 line-height: 1.2;
@@ -987,8 +1095,9 @@
           <div>
             <span class="disc"></span>
             <p
+              class="heading"
               style="
-                font-size: 24px;
+                font-size: 22px;
                 font-weight: 400;
                 margin: 0;
                 line-height: 1.2;
@@ -1009,8 +1118,9 @@
           <div>
             <span class="disc"></span>
             <p
+              class="heading"
               style="
-                font-size: 24px;
+                font-size: 22px;
                 font-weight: 400;
                 margin: 0;
                 line-height: 1.2;
@@ -1029,7 +1139,7 @@
             </p>
           </div>
         </div>
-        <div style="display: flex; justify-content: end">
+        <div style="display: flex; justify-content: end; margin-top: 20px">
           <img width="100%" src="./images/pathLeft.svg" />
         </div>
       </div>
@@ -1066,7 +1176,7 @@
         lush greenery without leaving your home.
       </p>
     </section>
-    <section class="section7-mobile mobile">
+    <section class="section7-mobile">
       <h1 class="heading" style="position: relative">
         Bring the Outside in.<span
           style="
@@ -1091,6 +1201,7 @@
           font-weight: 300;
           padding: 20px 20px 0 20px;
           margin: 0;
+          line-height: 1.8;
         "
       >
         Constructed with classic sensibilities mixed with contemporary design,
@@ -1159,8 +1270,8 @@
         <img height="450px" src="./images/garden2.png" />
       </div>
     </section>
-    <section class="section8-mobile mobile">
-      <h1 style="position: relative">
+    <section class="section8-mobile">
+      <h1 class="heading" style="position: relative; z-index: 2">
         Plush Gardens<span
           style="
             position: absolute;
@@ -1175,17 +1286,62 @@
           "
         ></span>
       </h1>
-      <div
-        style="
-          position: relative;
-          display: flex;
-          justify-content: end;
-          margin: 40px 0;
-        "
-      >
+      <div class="plushGarden">
         <img width="70%" src="./images/garden2.png" />
       </div>
       <img style="margin-left: 30px" width="50%" src="./images/garden1.png" />
+      <div style="margin-top: 30px; padding: 0 30px">
+        <div class="court-desc">
+          <div>
+            <span class="disc"></span>
+            <p
+              class="heading"
+              style="
+                font-size: 22px;
+                font-weight: 400;
+                margin: 0;
+                line-height: 1.2;
+              "
+            >
+              Terrace Garden
+            </p>
+          </div>
+          <div>
+            <span
+              style="display: inline-block; height: 15px; width: 15px"
+            ></span>
+            <p>
+              Drip Irrigated with pre-set<br />
+              engineering systems.
+            </p>
+          </div>
+        </div>
+        <div class="court-desc">
+          <div>
+            <span class="disc"></span>
+            <p
+              class="heading"
+              style="
+                font-size: 22px;
+                font-weight: 400;
+                margin: 0;
+                line-height: 1.2;
+              "
+            >
+              Front Lawn
+            </p>
+          </div>
+          <div>
+            <span
+              style="display: inline-block; height: 15px; width: 15px"
+            ></span>
+            <p>
+              Private front lawn for parties<br />
+              and barbeques.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="section9">
       <div class="top9">
@@ -1235,8 +1391,8 @@
         </div>
       </div>
     </section>
-    <section class="section9-mobile mobile">
-      <h1 style="position: relative">
+    <section class="section9-mobile">
+      <h2 class="heading" style="position: relative">
         Homes that keep on giving<span
           style="
             position: absolute;
@@ -1245,12 +1401,12 @@
             height: 40px;
             background-color: #efead4;
             right: 49%;
-            top: 5px;
+            top: 0;
             border-radius: 40px;
             z-index: -1;
           "
         ></span>
-      </h1>
+      </h2>
       <div style="display: flex; justify-content: center; margin-top: 40px">
         <img width="90%" src="./images/home.png" />
       </div>
@@ -1276,6 +1432,7 @@
           justify-content: space-between;
           padding: 30px 20px 0 20px;
           gap: 10px;
+          font-weight: 300;
         "
         class="right9"
       >
@@ -1317,8 +1474,11 @@
         <img width="80%" src="./images/floorPlan.png" alt="Image" />
       </div>
     </section>
-    <section class="section10-mobile mobile">
-      <h1 style="position: relative; padding-left: 25px">
+    <section id="floorPlan1" class="section10-mobile">
+      <h1
+        class="heading"
+        style="position: relative; padding-left: 25px; z-index: 2"
+      >
         Floor Plan<span
           style="
             position: absolute;
@@ -1333,6 +1493,27 @@
           "
         ></span>
       </h1>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+        "
+      >
+        <a style="width: 90%" href="./images/fp1.jpg" data-fancybox="gallery">
+          <img width="100%" src="./images/fp1.jpg" alt="Image 1" />
+        </a>
+        <a style="width: 90%" href="./images/fp2.jpg" data-fancybox="gallery">
+          <img width="100%" src="./images/fp2.jpg" alt="Image 2" />
+        </a>
+        <a style="width: 90%" href="./images/fp3.jpg" data-fancybox="gallery">
+          <img width="100%" src="./images/fp3.jpg" alt="Image 3" />
+        </a>
+        <a style="width: 90%" href="./images/fp4.jpg" data-fancybox="gallery">
+          <img width="100%" src="./images/fp4.jpg" alt="Image 4" />
+        </a>
+      </div>
     </section>
     <section class="section11" id="amenities">
       <h1
@@ -1356,19 +1537,19 @@
             <h2 style="font-weight: 400">Outdoor</h2>
           </div>
           <div class="row11">
-            <img width="30px" src="./images/pool.svg" />
+            <img width="50px" src="./images/pool.svg" />
             <p>Swimming Pool</p>
           </div>
           <div class="row11">
-            <img width="30px" src="./images/zumba.svg" />
+            <img width="50px" src="./images/zumba.svg" />
             <p>Yoga/Zumba Deck</p>
           </div>
           <div class="row11">
-            <img width="30px" src="./images/lawn.png" />
+            <img width="50px" src="./images/lawn.svg" />
             <p>Lawn Areas</p>
           </div>
           <div class="row11">
-            <img width="30px" src="./images/deck.svg" />
+            <img width="50px" src="./images/deck.svg" />
             <p>Sunrise Deck</p>
           </div>
         </div>
@@ -1379,26 +1560,26 @@
             <h2 style="font-weight: 400">Indoor</h2>
           </div>
           <div class="row11">
-            <img width="30px" src="./images/jacuzzi.svg" />
+            <img width="50px" src="./images/jacuzzi.svg" />
             <p>Jacuzzi/Steam Room</p>
           </div>
           <div class="row11">
-            <img width="30px" src="./images/Gym.svg" />
+            <img width="50px" src="./images/Gym.svg" />
             <p>Gym</p>
           </div>
           <div class="row11">
-            <img width="30px" src="./images/kidsZone.svg" />
+            <img width="50px" src="./images/kidsZone.svg" />
             <p>Children’s Play Area</p>
           </div>
           <div class="row11">
-            <img width="30px" src="./images/games.svg" />
+            <img width="50px" src="./images/games.svg" />
             <p>Indoor Games</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="section11-mobile mobile">
-      <h1 style="position: relative">
+    <section id="amenities1" class="section11-mobile">
+      <h1 class="heading" style="position: relative">
         Amenities<span
           style="
             position: absolute;
@@ -1429,19 +1610,19 @@
       </div>
       <div class="left11" style="padding-left: 30px">
         <div class="row11">
-          <img width="30px" src="./images/pool.svg" />
+          <img width="40px" src="./images/pool.svg" />
           <p>Swimming Pool</p>
         </div>
         <div class="row11">
-          <img width="30px" src="./images/zumba.svg" />
+          <img width="40px" src="./images/zumba.svg" />
           <p>Yoga/Zumba Deck</p>
         </div>
         <div class="row11">
-          <img width="30px" src="./images/lawn.png" />
+          <img width="40px" src="./images/lawn.svg" />
           <p>Lawn Areas</p>
         </div>
         <div class="row11">
-          <img width="30px" src="./images/deck.svg" />
+          <img width="40px" src="./images/deck.svg" />
           <p>Sunrise Deck</p>
         </div>
       </div>
@@ -1464,19 +1645,19 @@
       </div>
       <div class="right11" style="padding-left: 30px">
         <div class="row11">
-          <img width="30px" src="./images/jacuzzi.svg" />
+          <img width="40px" src="./images/jacuzzi.svg" />
           <p>Jacuzzi/Steam Room</p>
         </div>
         <div class="row11">
-          <img width="30px" src="./images/Gym.svg" />
+          <img width="40px" src="./images/Gym.svg" />
           <p>Gym</p>
         </div>
         <div class="row11">
-          <img width="30px" src="./images/kidsZone.svg" />
+          <img width="40px" src="./images/kidsZone.svg" />
           <p>Children’s Play Area</p>
         </div>
         <div class="row11">
-          <img width="30px" src="./images/games.svg" />
+          <img width="40px" src="./images/games.svg" />
           <p>Indoor Games</p>
         </div>
       </div>
@@ -1525,8 +1706,8 @@
         </div>
       </div>
     </section>
-    <section class="section12-mobile mobile">
-      <h1 style="position: relative">
+    <section id="location1" class="section12-mobile">
+      <h1 class="heading" style="position: relative; z-index: 2">
         Location<span
           style="
             position: absolute;
@@ -1545,7 +1726,7 @@
         <div>
           <div style="display: flex; gap: 20px; margin-left: 22px">
             <img width="58px" height="58px" src="./images/school.png" />
-            <p style="font-size: 18px">
+            <p class="heading" style="font-size: 18px">
               Near by<br /><span style="font-size: 24px">Schools/Colleges</span>
             </p>
           </div>
@@ -1620,7 +1801,6 @@
           </div>
           <div class="checkboxWrapper">
             <input
-              style="margin-top: 6px"
               class="checkbox3"
               type="checkbox"
               onclick="inputChange(event,3)"
@@ -2030,7 +2210,7 @@
         <!-- <div class="bed-video">
           <video
             id="myVideo"
-            autoplay
+            
             loop
             src="./images/Final Bedroom.mp4"
           ></video>
@@ -2038,7 +2218,7 @@
         <div class="bed-video">
           <video
             id="myVideo"
-            autoplay
+            
             loop
             src="./images/Final Bedroom.mp4"
           ></video>
@@ -2046,7 +2226,7 @@
         <div class="bed-video">
           <video
             id="myVideo"
-            autoplay
+            
             loop
             src="./images/Final Bedroom.mp4"
           ></video>
