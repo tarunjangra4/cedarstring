@@ -89,8 +89,7 @@ observer.observe(section);
 var video1 = document.querySelector(".video-container1");
 function handleIntersection1(entries) {
   entries.forEach(function (entry) {
-    console.log(entry.intersectionRatio, "1");
-    if (entry.intersectionRatio >= 0.5) {
+    if (entry.isIntersecting) {
       section1[0].pause();
       section1[1].pause();
       section1[2].pause();
@@ -107,8 +106,7 @@ observer1.observe(video1);
 var video2 = document.querySelector(".video-container2");
 function handleIntersection2(entries) {
   entries.forEach(function (entry) {
-    console.log(entry.intersectionRatio, "2");
-    if (entry.intersectionRatio >= 0.5) {
+    if (entry.isIntersecting) {
       section2[0].pause();
       section2[1].pause();
       section2[2].pause();
@@ -125,7 +123,7 @@ observer2.observe(video2);
 var video3 = document.querySelector(".video-container3");
 function handleIntersection3(entries) {
   entries.forEach(function (entry) {
-    if (entry.intersectionRatio >= 0.5) {
+    if (entry.isIntersecting) {
       section3[0].pause();
       section3[1].pause();
       section3[currentIndex3].play();
@@ -141,7 +139,7 @@ observer3.observe(video3);
 var video4 = document.querySelector(".video-container4");
 function handleIntersection4(entries) {
   entries.forEach(function (entry) {
-    if (entry.intersectionRatio >= 0.5) {
+    if (entry.isIntersecting) {
       section4[0].pause();
       section4[1].pause();
       section4[2].pause();
@@ -159,12 +157,14 @@ observer4.observe(video4);
 window.addEventListener("load", () => {
   dash1[0].style.width = "50px";
   dash1[0].style.border = "1.5px solid black";
-  dash2[0].style.width = "50px";
-  dash2[0].style.border = "1.5px solid black";
+  dash2[2].style.width = "50px";
+  dash2[2].style.border = "1.5px solid black";
+  container2.scrollTo({ left: 2 * 670, behavior: "smooth" });
   dash3[0].style.width = "50px";
   dash3[0].style.border = "1.5px solid black";
-  dash4[0].style.width = "50px";
-  dash4[0].style.border = "1.5px solid black";
+  dash4[2].style.width = "50px";
+  dash4[2].style.border = "1.5px solid black";
+  container4.scrollTo({ left: 2 * 670, behavior: "smooth" });
 });
 
 const container1 = document.querySelector(".video-container1");
@@ -216,14 +216,13 @@ function playVideo1(index) {
 /////////////////////////////222222222//////////////////////////////
 const container2 = document.querySelector(".video-container2");
 const section2 = document.querySelectorAll(".living-video");
-let currentIndex2 = 0;
+let currentIndex2 = 2;
 
 function scrollRight2() {
   if (currentIndex2 < section2.length - 1) {
     currentIndex2++;
   }
   let targetPosition = currentIndex2 * 622 + 50;
-  // console.log(currentIndex2, targetPosition);
   container2.scrollTo({ left: targetPosition, behavior: "smooth" });
   changeDash2(currentIndex2);
   playVideo2(currentIndex2);
@@ -234,7 +233,6 @@ function scrollLeft2() {
     currentIndex2--;
   }
   let targetPosition = currentIndex2 * (550 + 50);
-  // console.log(currentIndex2, targetPosition);
   container2.scrollTo({ left: targetPosition, behavior: "smooth" });
   changeDash2(currentIndex2);
   playVideo2(currentIndex2);
@@ -269,7 +267,6 @@ function scrollRight3() {
     currentIndex3++;
   }
   let targetPosition = currentIndex3 * 622 + 50;
-  // console.log(currentIndex3, targetPosition);
   container3.scrollTo({ left: targetPosition, behavior: "smooth" });
   changeDash3(currentIndex3);
   playVideo3(currentIndex3);
@@ -280,7 +277,6 @@ function scrollLeft3() {
     currentIndex3--;
   }
   let targetPosition = currentIndex3 * (550 + 50);
-  // console.log(currentIndex3, targetPosition);
   container3.scrollTo({ left: targetPosition, behavior: "smooth" });
   changeDash3(currentIndex3);
   playVideo3(currentIndex3);
@@ -307,14 +303,13 @@ function playVideo3(index) {
 /////////////////////////////444444444//////////////////////////////
 const container4 = document.querySelector(".video-container4");
 const section4 = document.querySelectorAll(".balc-video");
-let currentIndex4 = 0;
+let currentIndex4 = 2;
 
 function scrollRight4() {
   if (currentIndex4 < section4.length - 1) {
     currentIndex4++;
   }
   let targetPosition = currentIndex4 * 622 + 50;
-  // console.log(currentIndex4, targetPosition);
   container4.scrollTo({ left: targetPosition, behavior: "smooth" });
   changeDash4(currentIndex4);
   playVideo4(currentIndex4);
@@ -325,7 +320,6 @@ function scrollLeft4() {
     currentIndex4--;
   }
   let targetPosition = currentIndex4 * (550 + 50);
-  // console.log(currentIndex4, targetPosition);
   container4.scrollTo({ left: targetPosition, behavior: "smooth" });
   changeDash4(currentIndex4);
   playVideo4(currentIndex4);

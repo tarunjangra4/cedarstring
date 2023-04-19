@@ -4,7 +4,6 @@
 // );
 
 // window.addEventListener("load", () => {
-//   console.log("kadkjfakjjl");
 //   dash1[0].style.width = "50px";
 //   dash1[0].style.border = "1.5px solid black";
 //   dash2[0].style.width = "50px";
@@ -57,14 +56,11 @@
 // });
 
 // var currentIndex = 1;
-// console.log("index ", currentIndex);
 // document.getElementById("rightScroll1").addEventListener("click", function () {
 //   currentIndex++;
 //   if (currentIndex >= sections.length) {
 //     currentIndex = 0;
-//     console.log("if", sections[currentIndex]);
 //   }
-//   console.log("index ", currentIndex);
 //   sections[currentIndex].scrollIntoView({ behavior: "smooth" });
 //   if (currentIndex == 0) {
 //     currentIndex++;
@@ -73,17 +69,14 @@
 
 // document.getElementById("leftScroll1").addEventListener("click", function () {
 //   if (currentIndex == 0 || currentIndex == 1) {
-//     console.log("first");
 //     currentIndex = sections.length - 1;
 //   } else if (currentIndex < 0) {
-//     console.log("third");
 //     currentIndex = sections.length - 1;
 //   } else if (currentIndex == sections.length - 1) {
 //     currentIndex -= 2;
 //   } else {
 //     currentIndex--;
 //   }
-//   console.log("abc ", currentIndex);
 //   sections[currentIndex].scrollIntoView({ behavior: "smooth" });
 // });
 
@@ -112,7 +105,6 @@
 //     block: "start",
 //     inline: "nearest",
 //   });
-//   console.log("abc");
 //   sections2[currentIndex2].play();
 //   changeDash2(currentIndex2);
 // });
@@ -211,30 +203,40 @@
 //   changeDash4(currentIndex4);
 // });
 
-// window.addEventListener("load", (event) => {
-//   section5[0].play();
-//   section6[0].play();
-//   section7[0].play();
-//   section8[0].play();
-// });
-
 var video5 = document.querySelector(".mobContainer1");
+var video6 = document.querySelector(".mobContainer2");
+var video7 = document.querySelector(".mobContainer3");
+var video8 = document.querySelector(".mobContainer4");
 function handleIntersection5(entries) {
   entries.forEach(function (entry) {
-    if (entry.intersectionRatio >= 0.5) {
-      console.log("if1", currentIndex5);
-      section5[0].pause();
-      section5[1].pause();
-      section5[2].pause();
-      section5[currentIndex5].play();
-    } else {
-      console.log("else1", currentIndex5);
-      section5[currentIndex5].pause();
+    const target = entry.target;
+    const videos = target.querySelectorAll("video");
+    console.log(target.className, typeof target.className);
+    let className = target.className;
+    if (entry.isIntersecting) {
+      videos.forEach((e) => e.pause());
+      if (className.includes("mobContainer1")) {
+        videos[currentIndex5].play();
+      } else if (className.includes("mobContainer2")) {
+        videos[currentIndex6].play();
+      } else if (className.includes("mobContainer3")) {
+        videos[currentIndex7].play();
+      } else if (className.includes("mobContainer4")) {
+        videos[currentIndex8].play();
+      }
+      return;
     }
+    videos.forEach((e) => e.pause());
   });
 }
-var observer5 = new IntersectionObserver(handleIntersection5);
+var observer5 = new IntersectionObserver(handleIntersection5, {
+  root: null,
+  threshold: [0.5, 1],
+});
 observer5.observe(video5);
+observer5.observe(video6);
+observer5.observe(video7);
+observer5.observe(video8);
 
 var mobContainer1 = document.querySelector(".mobContainer1");
 var section5 = document.querySelectorAll(".mobVideo1");
@@ -272,7 +274,6 @@ function scrollLeft5() {
 // }
 
 function playVideo5(index) {
-  console.log("play");
   section5[0].pause();
   section5[1].pause();
   section5[2].pause();
@@ -282,24 +283,21 @@ function playVideo5(index) {
 /////////////////
 /////////////////
 /////////////////
-var video6 = document.querySelector(".mobContainer2");
+
 function handleIntersection6(entries) {
   entries.forEach(function (entry) {
     if (entry.intersectionRatio >= 0.5) {
-      console.log("if2", currentIndex6);
       section6[0].pause();
       section6[1].pause();
       section6[2].pause();
       section6[currentIndex6].play();
     } else {
-      console.log("else2", currentIndex6);
-
       section6[currentIndex6].pause();
     }
   });
 }
 var observer6 = new IntersectionObserver(handleIntersection6);
-observer6.observe(video6);
+// observer6.observe(video6);
 
 var mobContainer2 = document.querySelector(".mobContainer2");
 var section6 = document.querySelectorAll(".mobVideo2");
@@ -326,7 +324,6 @@ function scrollLeft6() {
 }
 
 function playVideo6(index) {
-  console.log("play2");
   section6[0].pause();
   section6[1].pause();
   section6[2].pause();
@@ -336,7 +333,7 @@ function playVideo6(index) {
 //******************
 //******************
 //******************
-var video7 = document.querySelector(".mobContainer3");
+
 function handleIntersection7(entries) {
   entries.forEach(function (entry) {
     if (entry.intersectionRatio >= 0.5) {
@@ -349,7 +346,7 @@ function handleIntersection7(entries) {
   });
 }
 var observer7 = new IntersectionObserver(handleIntersection7);
-observer7.observe(video7);
+// observer7.observe(video7);
 
 var mobContainer3 = document.querySelector(".mobContainer3");
 var section7 = document.querySelectorAll(".mobVideo3");
@@ -384,7 +381,7 @@ function playVideo7(index) {
 ///$$$$$$$$$$$$$$$$$$$$$$$
 ///$$$$$$$$$$$$$$$$$$$$$$$
 ///$$$$$$$$$$$$$$$$$$$$$$$
-var video8 = document.querySelector(".mobContainer4");
+
 function handleIntersection8(entries) {
   entries.forEach(function (entry) {
     if (entry.intersectionRatio >= 0.5) {
@@ -398,7 +395,7 @@ function handleIntersection8(entries) {
   });
 }
 var observer8 = new IntersectionObserver(handleIntersection8);
-observer8.observe(video8);
+// observer8.observe(video8);
 
 var mobContainer4 = document.querySelector(".mobContainer4");
 var section8 = document.querySelectorAll(".mobVideo4");
