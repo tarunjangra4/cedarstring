@@ -343,6 +343,78 @@ function playVideo4(index) {
   section4[index].play();
 }
 
+//////////////location scroll////////////////
+////////////////////////////////////////////
+var locationContainer = document.querySelector(".location-scroll");
+var locationList = document.querySelectorAll(".ls1");
+var currentIndex9 = 0;
+
+function scrollRight9() {
+  if (currentIndex9 < locationList.length - 1) {
+    currentIndex9++;
+  }
+  let targetPosition = currentIndex9 * (locationList[0].clientWidth + 100);
+  console.log("width ", locationList[0].clientWidth);
+  locationContainer.scrollTo({ left: targetPosition, behavior: "smooth" });
+  changeDash9(currentIndex9);
+}
+
+function scrollLeft9() {
+  if (currentIndex9 > 0) {
+    currentIndex9--;
+  }
+  let targetPosition = currentIndex9 * (locationList[0].clientWidth + 100);
+  locationContainer.scrollTo({ left: targetPosition, behavior: "smooth" });
+  changeDash9(currentIndex9);
+}
+
+var dash9 = document.querySelectorAll(".bottom-dash9");
+
+function changeDash9(currentIndex) {
+  for (let i = 0; i < dash9.length; i++) {
+    dash9[i].style.width = "20px";
+    dash9[i].style.borderBottom = "1.5px solid rgb(214, 213, 213)";
+  }
+  dash9[currentIndex].style.width = "50px";
+  dash9[currentIndex].style.borderBottom = "1.5px solid rgb(113, 112, 112)";
+}
+
+//////////////location mobile scroll////////////////
+////////////////////////////////////////////
+var locationMobContainer = document.querySelector(".location-mscroll");
+var locationMobList = document.querySelectorAll(".ls2");
+var currentIndex10 = 0;
+
+function scrollRight10() {
+  if (currentIndex10 < locationMobList.length - 1) {
+    currentIndex10++;
+  }
+  let targetPosition = currentIndex10 * (locationMobList[0].clientWidth + 100);
+  console.log("width ", locationMobList[0].clientWidth);
+  locationMobContainer.scrollTo({ left: targetPosition, behavior: "smooth" });
+  changeDash10(currentIndex10);
+}
+
+function scrollLeft10() {
+  if (currentIndex10 > 0) {
+    currentIndex10--;
+  }
+  let targetPosition = currentIndex10 * (locationMobList[0].clientWidth + 100);
+  locationMobContainer.scrollTo({ left: targetPosition, behavior: "smooth" });
+  changeDash10(currentIndex10);
+}
+
+var dash10 = document.querySelectorAll(".bottom-dash10");
+
+function changeDash10(currentIndex) {
+  for (let i = 0; i < dash10.length; i++) {
+    dash10[i].style.width = "15px";
+    dash10[i].style.borderBottom = "1.5px solid rgb(214, 213, 213)";
+  }
+  dash10[currentIndex].style.width = "30px";
+  dash10[currentIndex].style.borderBottom = "1.5px solid rgb(113, 112, 112)";
+}
+
 /////////////////////////    form    ////////////////////////
 ////////////////////////////////////////////////////////////
 
