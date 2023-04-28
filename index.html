@@ -46,6 +46,19 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.12/build/js/intlTelInput.min.js"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-10852030635"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-10852030635");
+    </script>
     <script type="text/javascript">
       (function (c, l, a, r, i, t, y) {
         c[a] =
@@ -203,19 +216,24 @@
             style="width: 120px; height: 120px; margin-bottom: 30px"
             src="./images/Group46.svg"
           />
-          <p class="heading" style="font-size: 60px; font-weight: 800">
+          <p
+            class="heading"
+            style="font-size: 60px; font-weight: 800; margin: 0"
+          >
             6,613 <span style="font-size: 34px">sq. ft.</span>
           </p>
-          <p class="heading" style="font-size: 34px">of Pure Bliss</p>
+          <p class="heading" style="font-size: 34px; margin: 0">
+            of Pure Bliss
+          </p>
           <button
             class="btn1 heading"
             type="button"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           >
-            Ready to move
+            Ultra Luxury Row Villas
           </button>
-          <p style="font-size: 20px">Ultra Luxury Row Villas at Thanisandra</p>
+          <p style="font-size: 18px; margin: 0">at Thanisandra</p>
           <p style="font-size: 24px">₹7 Crore Onwards</p>
         </div>
       </div>
@@ -271,10 +289,10 @@
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
         >
-          Ready to move
+          Ultra Luxury Row Villas
         </button>
         <p style="font-size: 16px; margin: 0; margin-top: 10px">
-          Ultra Luxury Row Villas at Thanisandra
+          at Thanisandra
         </p>
         <p style="font-size: 20px">₹7 Crore Onwards</p>
       </div>
@@ -335,8 +353,48 @@
         Constructed with classic sensibilities<br />
         mixed with contemporary design
       </p>
+      <h2
+        class="heading"
+        style="
+          position: relative;
+          margin-top: 16px;
+          padding: 0 30px;
+          width: 100%;
+          margin-top: 40px;
+        "
+      >
+        Ready to Move In<span
+          style="
+            position: absolute;
+            display: inline-block;
+            width: 78px;
+            height: 38px;
+            background-color: #dee4bb;
+            left: 120px;
+            top: -8px;
+            border-radius: 20px;
+            z-index: -1;
+          "
+        ></span>
+      </h2>
+      <p style="padding: 0 20px; font-weight: 200; font-size: 14px">
+        Luxury Living Made Easy,<br />
+        Move-In Today
+      </p>
     </section>
     <section class="section2">
+      <div class="moveInContainer">
+        <div class="moveInDetails">
+          <h3 class="moveIn heading">
+            Ready to Move In
+            <span class="moveIn-back"></span>
+          </h3>
+          <p style="color: #5c5c5c; text-align: center">
+            Luxury Living Made Easy,<br />
+            Move-In Today
+          </p>
+        </div>
+      </div>
       <div id="about">
         <h1
           class="heading"
@@ -1348,8 +1406,8 @@
         Constructed with classic sensibilities mixed with contemporary design,
         we strive to bring you closer to nature. Each unit<br />
         comes equipped with a garden kitchen. Relish your dining experience in
-        the comfort of your cosy kitchen or enjoy an outdoor meal amidst<br />
-        lush greenery without leaving your home.
+        the comfort of your cosy kitchen or enjoy<br />
+        an outdoor meal amidst lush greenery without leaving your home.
       </p>
     </section>
     <section class="section7-mobile">
@@ -1427,13 +1485,17 @@
               </p>
             </div>
           </div>
-          <img
-            loading="lazy"
-            alt=""
-            width="220px"
-            height="340px"
-            src="./images/garden1.webp"
-          />
+          <video
+            style="width: 230px; height: 340px; border-radius: 20px"
+            class="garden-video"
+            type="video/mp4"
+            autoplay
+            muted
+            loop
+            src="./images/lawn.mp4"
+            preload="metadata"
+            playsinline
+          ></video>
         </div>
       </div>
       <div class="right8">
@@ -1454,8 +1516,17 @@
             </div>
           </div>
         </div>
-
-        <img loading="lazy" alt="" height="450px" src="./images/garden2.webp" />
+        <video
+          style="width: 300px; height: 530px; border-radius: 20px"
+          class="garden-video"
+          muted
+          loop
+          type="video/mp4"
+          autoplay
+          src="https://fincity-public.s3.ap-south-1.amazonaws.com/landing-pages/cedar-strings/videos/terrace.mp4"
+          preload="metadata"
+          playsinline
+        ></video>
       </div>
     </section>
     <section class="section8-mobile">
@@ -1475,7 +1546,18 @@
         ></span>
       </h1>
       <div class="plushGarden">
-        <img loading="lazy" alt="" width="70%" src="./images/garden2.webp" />
+        <video
+          class="garden-video1"
+          width="70%"
+          style="border-radius: 10px"
+          type="video/mp4"
+          autoplay
+          muted
+          loop
+          src="./images/terrace.mp4"
+          preload="metadata"
+          playsinline
+        ></video>
         <div class="court-desc" style="margin: 30px 0 0 0; width: 70%">
           <div>
             <span class="disc"></span>
@@ -1502,13 +1584,18 @@
           </div>
         </div>
       </div>
-      <img
-        loading="lazy"
-        alt=""
-        style="margin-left: 20px"
+      <video
+        class="garden-video1"
         width="55%"
-        src="./images/garden1.webp"
-      />
+        style="border-radius: 10px; margin-left: 20px"
+        type="video/mp4"
+        autoplay
+        muted
+        loop
+        src="./images/lawn.mp4"
+        preload="metadata"
+        playsinline
+      ></video>
       <div style="margin-top: 30px; padding: 0 20px">
         <div class="court-desc">
           <div>
@@ -1820,7 +1907,7 @@
           </div>
         </div>
         <div class="right11">
-          <img loading="lazy" alt="" width="500px" src="./images/indoor.png" />
+          <img loading="lazy" alt="" width="500px" src="./images/indoor.webp" />
           <div class="row11">
             <img
               loading="lazy"
@@ -1923,7 +2010,7 @@
         <h3 style="font-weight: 300">Indoor</h3>
       </div>
       <div style="display: flex; justify-content: center">
-        <img loading="lazy" alt="" width="90%" src="./images/indoor.png" />
+        <img loading="lazy" alt="" width="90%" src="./images/indoor.webp" />
       </div>
       <div class="right11" style="padding-left: 30px">
         <div class="row11">
@@ -2407,6 +2494,7 @@
           </div>
           <div class="checkboxWrapper">
             <input
+              style="margin-top: 5px"
               class="checkbox3"
               type="checkbox"
               onclick="inputChange(event,3)"

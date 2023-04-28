@@ -99,7 +99,10 @@ function handleIntersection1(entries) {
     }
   });
 }
-var observer1 = new IntersectionObserver(handleIntersection1);
+var observer1 = new IntersectionObserver(handleIntersection1, {
+  root: null,
+  threshold: [0.5, 1],
+});
 observer1.observe(video1);
 
 //////////////////////
@@ -116,7 +119,10 @@ function handleIntersection2(entries) {
     }
   });
 }
-var observer2 = new IntersectionObserver(handleIntersection2);
+var observer2 = new IntersectionObserver(handleIntersection2, {
+  root: null,
+  threshold: [0.5, 1],
+});
 observer2.observe(video2);
 
 ////////////////////
@@ -132,7 +138,10 @@ function handleIntersection3(entries) {
     }
   });
 }
-var observer3 = new IntersectionObserver(handleIntersection3);
+var observer3 = new IntersectionObserver(handleIntersection3, {
+  root: null,
+  threshold: [0.5, 1],
+});
 observer3.observe(video3);
 
 ////////////////////
@@ -149,7 +158,10 @@ function handleIntersection4(entries) {
     }
   });
 }
-var observer4 = new IntersectionObserver(handleIntersection4);
+var observer4 = new IntersectionObserver(handleIntersection4, {
+  root: null,
+  threshold: [0.5, 1],
+});
 observer4.observe(video4);
 
 ////////////
@@ -415,8 +427,24 @@ function changeDash10(currentIndex) {
   dash10[currentIndex].style.borderBottom = "1.5px solid rgb(113, 112, 112)";
 }
 
+///////////////////////   garden video   /////////////////////
+/////////////////////////////////////////////////////////////
+
 /////////////////////////    form    ////////////////////////
 ////////////////////////////////////////////////////////////
+
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof url != "undefined") {
+      window.location = url;
+    }
+  };
+  gtag("event", "conversion", {
+    send_to: "AW-10852030635/q5pKCLDFv4MYEKux07Yo",
+    event_callback: callback,
+  });
+  return false;
+}
 
 function getInfo1(e, count) {
   e.stopPropagation();
@@ -468,6 +496,7 @@ function openApi(name, phone, email, count) {
   axios
     .post("https://api-dcrm.fincity.com/open/opportunity", body)
     .then((res) => {
+      gtag_report_conversion();
       if (isOtp) {
         let enquiryForm = document.querySelector(
           count == 1

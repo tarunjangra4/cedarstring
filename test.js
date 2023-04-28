@@ -207,6 +207,7 @@ var video5 = document.querySelector(".mobContainer1");
 var video6 = document.querySelector(".mobContainer2");
 var video7 = document.querySelector(".mobContainer3");
 var video8 = document.querySelector(".mobContainer4");
+var gardenVideo = document.querySelector(".section8");
 function handleIntersection5(entries) {
   entries.forEach(function (entry) {
     const target = entry.target;
@@ -223,6 +224,10 @@ function handleIntersection5(entries) {
         videos[currentIndex7].play();
       } else if (className.includes("mobContainer4")) {
         videos[currentIndex8].play();
+      } else if (className.includes("section8")) {
+        document.querySelectorAll(".garden-video").forEach((e) => {
+          e.play();
+        });
       }
       return;
     }
@@ -237,6 +242,7 @@ observer5.observe(video5);
 observer5.observe(video6);
 observer5.observe(video7);
 observer5.observe(video8);
+observer5.observe(gardenVideo);
 
 var mobContainer1 = document.querySelector(".mobContainer1");
 var section5 = document.querySelectorAll(".mobVideo1");
@@ -284,19 +290,19 @@ function playVideo5(index) {
 /////////////////
 /////////////////
 
-function handleIntersection6(entries) {
-  entries.forEach(function (entry) {
-    if (entry.intersectionRatio >= 0.5) {
-      section6[0].pause();
-      section6[1].pause();
-      section6[2].pause();
-      section6[currentIndex6].play();
-    } else {
-      section6[currentIndex6].pause();
-    }
-  });
-}
-var observer6 = new IntersectionObserver(handleIntersection6);
+// function handleIntersection6(entries) {
+//   entries.forEach(function (entry) {
+//     if (entry.intersectionRatio >= 0.5) {
+//       section6[0].pause();
+//       section6[1].pause();
+//       section6[2].pause();
+//       section6[currentIndex6].play();
+//     } else {
+//       section6[currentIndex6].pause();
+//     }
+//   });
+// }
+// var observer6 = new IntersectionObserver(handleIntersection6);
 // observer6.observe(video6);
 
 var mobContainer2 = document.querySelector(".mobContainer2");
@@ -334,18 +340,18 @@ function playVideo6(index) {
 //******************
 //******************
 
-function handleIntersection7(entries) {
-  entries.forEach(function (entry) {
-    if (entry.intersectionRatio >= 0.5) {
-      section7[0].pause();
-      section7[1].pause();
-      section7[currentIndex7].play();
-    } else {
-      section7[currentIndex7].pause();
-    }
-  });
-}
-var observer7 = new IntersectionObserver(handleIntersection7);
+// function handleIntersection7(entries) {
+//   entries.forEach(function (entry) {
+//     if (entry.intersectionRatio >= 0.5) {
+//       section7[0].pause();
+//       section7[1].pause();
+//       section7[currentIndex7].play();
+//     } else {
+//       section7[currentIndex7].pause();
+//     }
+//   });
+// }
+// var observer7 = new IntersectionObserver(handleIntersection7);
 // observer7.observe(video7);
 
 var mobContainer3 = document.querySelector(".mobContainer3");
@@ -382,19 +388,19 @@ function playVideo7(index) {
 ///$$$$$$$$$$$$$$$$$$$$$$$
 ///$$$$$$$$$$$$$$$$$$$$$$$
 
-function handleIntersection8(entries) {
-  entries.forEach(function (entry) {
-    if (entry.intersectionRatio >= 0.5) {
-      section8[0].pause();
-      section8[1].pause();
-      section8[2].pause();
-      section8[currentIndex8].play();
-    } else {
-      section8[currentIndex8].pause();
-    }
-  });
-}
-var observer8 = new IntersectionObserver(handleIntersection8);
+// function handleIntersection8(entries) {
+//   entries.forEach(function (entry) {
+//     if (entry.intersectionRatio >= 0.5) {
+//       section8[0].pause();
+//       section8[1].pause();
+//       section8[2].pause();
+//       section8[currentIndex8].play();
+//     } else {
+//       section8[currentIndex8].pause();
+//     }
+//   });
+// }
+// var observer8 = new IntersectionObserver(handleIntersection8);
 // observer8.observe(video8);
 
 var mobContainer4 = document.querySelector(".mobContainer4");
