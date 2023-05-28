@@ -186,8 +186,8 @@ button:disabled{
 .btn1{
     border: 0;
     cursor: pointer;
-    font-size: 22px;
-    padding: 10px 22px;
+    font-size: 24px;
+    padding: 10px 40px;
     border-radius: 30px;
     margin: 12px 0 10px 0;
     background-color: #fff;
@@ -198,7 +198,7 @@ button:disabled{
 }
 
 .section2{
-    margin-top: 950px; 
+    margin-top: 995px; 
     position: relative;
     padding: 0 100px;
 }
@@ -207,7 +207,7 @@ button:disabled{
     position: absolute;
     width: 780px;
     right: 0;
-    top: 0;
+    top: -50px;
 }
 .moveInDetails{
     position: absolute;
@@ -870,6 +870,23 @@ button:disabled{
     gap: 10px;
     margin-top: 20px;
     cursor: pointer;
+}
+.carousel-indicators{
+    top: -60px;
+    left: -50px;
+    justify-content: flex-start;
+    gap: 5px;
+}
+.carousel-indicators li{
+    background-color: #d3d2d2;
+    height: 2px;
+}
+.carousel-indicators li.active{
+    width: 45px;
+    background-color: #393838;
+}
+.carousel-inner{
+    height: 330px;
 }
 .modal-dialog{
     display: flex;

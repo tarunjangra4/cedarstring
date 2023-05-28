@@ -74,6 +74,12 @@
       })(window, document, "clarity", "script", "gte70mcgrb");
     </script>
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
       rel="stylesheet"
     />
@@ -231,9 +237,8 @@
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           >
-            Ultra Luxury Row Villas
+            Get Quote
           </button>
-          <p style="font-size: 18px; margin: 0">at Thanisandra</p>
           <p style="font-size: 24px">₹7 Cr. Onwards</p>
           <p>PRM/KA/RERA/1251/ 309/PR/171031/001009</p>
         </div>
@@ -284,18 +289,15 @@
           of Pure Bliss
         </p>
         <button
-          style="margin: 0; font-size: 18px; padding: 8px 26px"
+          style="margin: 0; font-size: 18px; padding: 8px 30px"
           class="btn1 heading"
           type="button"
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
         >
-          Ultra Luxury Row Villas
+          Get Quote
         </button>
-        <p style="font-size: 16px; margin: 0; margin-top: 10px">
-          at Thanisandra
-        </p>
-        <p style="font-size: 20px">₹7 Cr. Onwards</p>
+        <p style="font-size: 20px; margin-top: 10px">₹7 Cr. Onwards</p>
         <p style="font-size: 12px">PRM/KA/RERA/1251/ 309/PR/171031/001009</p>
       </div>
     </section>
@@ -2050,15 +2052,8 @@
         </h1>
         <img loading="lazy" alt="" width="50%" src="./images/pathLeft.svg" />
       </div>
-      <div
-        style="
-          display: flex;
-          justify-content: end;
-          margin: 30px 0;
-          padding-right: 65px;
-        "
-      >
-        <div
+      <div style="display: flex; margin-top: 100px">
+        <!-- <div
           style="
             display: flex;
             justify-content: space-between;
@@ -2095,7 +2090,7 @@
               onclick="scrollRight9()"
             />
           </div>
-        </div>
+        </div> -->
       </div>
       <div style="display: flex; gap: 70px">
         <iframe
@@ -2107,8 +2102,170 @@
           style="border: 0"
           allowfullscreen
         ></iframe>
+        <!-- location carousel -->
         <div style="width: 380px">
-          <div class="location-scroll">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="2"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="3"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="4"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="5"
+              ></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div style="display: flex; gap: 20px">
+                  <img
+                    loading="lazy"
+                    alt=""
+                    width="58px"
+                    height="58px"
+                    src="./images/school.png"
+                  />
+                  <p class="heading" style="font-size: 18px">
+                    Near by<br /><span style="font-size: 28px"
+                      >Schools/Colleges</span
+                    >
+                  </p>
+                </div>
+                <ul class="list12">
+                  <li>Vidya shilpa - 9km</li>
+                  <li>Vidya Niketan - 6km</li>
+                  <li>Reva college of Engineering - 3km</li>
+                  <li>Bangalore International School - 4km</li>
+                  <li>KNS Institute of Technology - 2km</li>
+                </ul>
+              </div>
+              <div class="carousel-item">
+                <div style="display: flex; gap: 20px">
+                  <img
+                    loading="lazy"
+                    alt=""
+                    width="58px"
+                    height="58px"
+                    src="./images/Hospital.svg"
+                  />
+                  <p class="heading" style="font-size: 18px">
+                    Near by<br /><span style="font-size: 28px">Hospitals</span>
+                  </p>
+                </div>
+                <ul class="list12">
+                  <li>Columbia Asia — 5Km</li>
+                  <li>Trinity Nursing Home — 7Km</li>
+                  <li>Bangalore Baptist Hospital - 10Km</li>
+                </ul>
+              </div>
+              <div class="carousel-item">
+                <div style="display: flex; gap: 20px">
+                  <img
+                    loading="lazy"
+                    alt=""
+                    width="58px"
+                    height="58px"
+                    src="./images/Malls.svg"
+                  />
+                  <p class="heading" style="font-size: 18px">
+                    Near by<br /><span style="font-size: 28px">Malls</span>
+                  </p>
+                </div>
+                <ul class="list12">
+                  <li>Elements Mall — 4Km</li>
+                  <li>Esteem Mall - 6Km</li>
+                </ul>
+              </div>
+              <div class="carousel-item">
+                <div style="display: flex; gap: 20px">
+                  <img
+                    loading="lazy"
+                    alt=""
+                    width="58px"
+                    height="58px"
+                    src="./images/Landmark.svg"
+                  />
+                  <p class="heading" style="font-size: 18px">
+                    Near by<br /><span style="font-size: 28px">Landmarks</span>
+                  </p>
+                </div>
+                <ul class="list12">
+                  <li>Manyata Tech Park — 3Km</li>
+                  <li>Hebbal Flyover — 6Km</li>
+                  <li>Mekhri Circle — 8Km</li>
+                  <li>Windsor Manor — 10Km</li>
+                  <li>MG Road — 12Km</li>
+                </ul>
+              </div>
+              <div class="carousel-item">
+                <div style="display: flex; gap: 20px">
+                  <img
+                    loading="lazy"
+                    alt=""
+                    width="58px"
+                    height="58px"
+                    src="./images/Airport.svg"
+                  />
+                  <p class="heading" style="font-size: 18px">
+                    Near by<br /><span style="font-size: 28px">Airport</span>
+                  </p>
+                </div>
+                <ul class="list12">
+                  <li>
+                    Kempegowda International<br />
+                    Airport,(Bangalore North) 24Km 
+                  </li>
+                </ul>
+              </div>
+              <div class="carousel-item">
+                <div style="display: flex; gap: 20px">
+                  <img
+                    loading="lazy"
+                    alt=""
+                    width="58px"
+                    height="58px"
+                    src="./images/Railway.svg"
+                  />
+                  <p class="heading" style="font-size: 18px">
+                    Near by<br /><span style="font-size: 28px"
+                      >Railway Station </span
+                    >
+                  </p>
+                </div>
+                <ul class="list12">
+                  <li>Bangalore Cantonment (North) - 13Km</li>
+                  <li>City Central Railway Station<br />(Center) - 18Km</li>
+                  <li>Yeshwantpur Railway Station <br />(North-West) - 17Km</li>
+                  <li>
+                    K.M KR Puram Railway Station<br />
+                    (North-East) - 15Km
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="location-scroll">
             <div class="ls1">
               <div style="display: flex; gap: 20px">
                 <img
@@ -2235,7 +2392,7 @@
                 </li>
               </ul>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -2255,7 +2412,7 @@
           "
         ></span>
       </h1>
-      <div
+      <!-- <div
         style="
           display: flex;
           justify-content: space-between;
@@ -2292,9 +2449,161 @@
             onclick="scrollRight10()"
           />
         </div>
+      </div> -->
+      <div style="margin-top: 60px"></div>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div style="display: flex; justify-content: end; position: relative">
+          <ol
+            class="carousel-indicators"
+            style="top: -30px; margin: 0; justify-content: end"
+          >
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+          </ol>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div style="display: flex; gap: 20px">
+              <img
+                loading="lazy"
+                alt=""
+                width="58px"
+                height="58px"
+                src="./images/school.png"
+              />
+              <p class="heading" style="font-size: 18px">
+                Near by<br /><span style="font-size: 26px"
+                  >Schools/Colleges</span
+                >
+              </p>
+            </div>
+            <ul class="list12">
+              <li>Vidya shilpa - 9km</li>
+              <li>Vidya Niketan - 6km</li>
+              <li>Reva college of Engineering - 3km</li>
+              <li>Bangalore International School - 4km</li>
+              <li>KNS Institute of Technology - 2km</li>
+            </ul>
+          </div>
+          <div class="carousel-item">
+            <div style="display: flex; gap: 20px">
+              <img
+                loading="lazy"
+                alt=""
+                width="58px"
+                height="58px"
+                src="./images/Hospital.svg"
+              />
+              <p class="heading" style="font-size: 18px">
+                Near by<br /><span style="font-size: 26px">Hospitals</span>
+              </p>
+            </div>
+            <ul class="list12">
+              <li>Columbia Asia — 5Km</li>
+              <li>Trinity Nursing Home — 7Km</li>
+              <li>Bangalore Baptist Hospital - 10Km</li>
+            </ul>
+          </div>
+          <div class="carousel-item">
+            <div style="display: flex; gap: 20px">
+              <img
+                loading="lazy"
+                alt=""
+                width="58px"
+                height="58px"
+                src="./images/Malls.svg"
+              />
+              <p class="heading" style="font-size: 18px">
+                Near by<br /><span style="font-size: 26px">Malls</span>
+              </p>
+            </div>
+            <ul class="list12">
+              <li>Elements Mall — 4Km</li>
+              <li>Esteem Mall - 6Km</li>
+            </ul>
+          </div>
+          <div class="carousel-item">
+            <div style="display: flex; gap: 20px">
+              <img
+                loading="lazy"
+                alt=""
+                width="58px"
+                height="58px"
+                src="./images/Landmark.svg"
+              />
+              <p class="heading" style="font-size: 18px">
+                Near by<br /><span style="font-size: 26px">Landmarks</span>
+              </p>
+            </div>
+            <ul class="list12">
+              <li>Manyata Tech Park — 3Km</li>
+              <li>Hebbal Flyover — 6Km</li>
+              <li>Mekhri Circle — 8Km</li>
+              <li>Windsor Manor — 10Km</li>
+              <li>MG Road — 12Km</li>
+            </ul>
+          </div>
+          <div class="carousel-item">
+            <div style="display: flex; gap: 20px">
+              <img
+                loading="lazy"
+                alt=""
+                width="58px"
+                height="58px"
+                src="./images/Airport.svg"
+              />
+              <p class="heading" style="font-size: 18px">
+                Near by<br /><span style="font-size: 26px">Airport</span>
+              </p>
+            </div>
+            <ul class="list12">
+              <li>
+                Kempegowda International<br />
+                Airport,(Bangalore North) 24Km 
+              </li>
+            </ul>
+          </div>
+          <div class="carousel-item">
+            <div style="display: flex; gap: 20px">
+              <img
+                loading="lazy"
+                alt=""
+                width="58px"
+                height="58px"
+                src="./images/Railway.svg"
+              />
+              <p class="heading" style="font-size: 18px">
+                Near by<br /><span style="font-size: 26px"
+                  >Railway Station </span
+                >
+              </p>
+            </div>
+            <ul class="list12">
+              <li>Bangalore Cantonment (North) - 13Km</li>
+              <li>City Central Railway Station<br />(Center) - 18Km</li>
+              <li>Yeshwantpur Railway Station <br />(North-West) - 17Km</li>
+              <li>
+                K.M KR Puram Railway Station<br />
+                (North-East) - 15Km
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="location-mscroll">
-        <div class="ls2">
+        <!-- <div class="ls2">
           <div style="display: flex; gap: 20px">
             <img
               loading="lazy"
@@ -2314,8 +2623,8 @@
             <li>Bangalore International School - 4km</li>
             <li>KNS Institute of Technology - 2km</li>
           </ul>
-        </div>
-        <div class="ls2">
+        </div> -->
+        <!-- <div class="ls2">
           <div style="display: flex; gap: 20px">
             <img
               loading="lazy"
@@ -2333,8 +2642,8 @@
             <li>Trinity Nursing Home — 7Km</li>
             <li>Bangalore Baptist Hospital - 10Km</li>
           </ul>
-        </div>
-        <div class="ls2">
+        </div> -->
+        <!-- <div class="ls2">
           <div style="display: flex; gap: 20px">
             <img
               loading="lazy"
@@ -2351,8 +2660,8 @@
             <li>Elements Mall — 4Km</li>
             <li>Esteem Mall - 6Km</li>
           </ul>
-        </div>
-        <div class="ls2">
+        </div> -->
+        <!-- <div class="ls2">
           <div style="display: flex; gap: 20px">
             <img
               loading="lazy"
@@ -2372,8 +2681,8 @@
             <li>Windsor Manor — 10Km</li>
             <li>MG Road — 12Km</li>
           </ul>
-        </div>
-        <div class="ls2">
+        </div> -->
+        <!-- <div class="ls2">
           <div style="display: flex; gap: 20px">
             <img
               loading="lazy"
@@ -2392,8 +2701,8 @@
               Airport,(Bangalore North) 24Km 
             </li>
           </ul>
-        </div>
-        <div class="ls2">
+        </div> -->
+        <!-- <div class="ls2">
           <div style="display: flex; gap: 20px">
             <img
               loading="lazy"
@@ -2415,7 +2724,7 @@
               (North-East) - 15Km
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
       <div style="display: flex; justify-content: center; margin-top: 30px">
         <iframe
@@ -2921,6 +3230,21 @@
         });
       });
     </script>
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
     <script defer src="./index.js"></script>
     <script defer src="./test.js"></script>
   </body>
